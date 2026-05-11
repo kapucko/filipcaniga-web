@@ -1,0 +1,53 @@
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+
+      <a href="{{ base }}index.html" class="site-logo">
+        <div class="logo-mark">FC</div>
+        <div class="logo-text">
+          <span class="logo-name">MUDr. Filip Čaniga</span>
+          <span class="logo-title">Plastická &amp; estetická chirurgia</span>
+        </div>
+      </a>
+
+      <nav class="primary-nav" aria-label="Hlavná navigácia">
+        <div class="nav-item"><a href="{{ base }}index.html" class="nav-link{{ active_home }}">Domov</a></div>
+        <div class="nav-item"><a href="{{ base }}o-mne/index.html" class="nav-link{{ active_omne }}">O mne</a></div>
+        <div class="nav-item has-sub">
+          <a href="#" class="nav-link has-dropdown{{ active_zakroky }}">Zákroky</a>
+          <div class="dropdown-menu">
+            <a href="{{ base }}zakroky/krajsia-tvar/index.html" class="dropdown-link">Krajšia tvár</a>
+            <a href="{{ base }}zakroky/krajsie-prsia/index.html" class="dropdown-link">Krajšie prsia</a>
+            <a href="{{ base }}zakroky/krajsie-telo/index.html" class="dropdown-link">Krajšie telo</a>
+            <a href="{{ base }}zakroky/atraktivnejsi-muz/index.html" class="dropdown-link">Atraktívnejší muž</a>
+          </div>
+        </div>
+        <div class="nav-item"><a href="{{ base }}bb-v-mediach/index.html" class="nav-link{{ active_mediach }}">FC v médiách</a></div>
+        <div class="nav-item"><a href="{{ base }}faq/index.html" class="nav-link{{ active_faq }}">FAQ</a></div>
+        <div class="nav-item"><a href="{{ base }}kontakt/index.html" class="nav-link{{ active_kontakt }}">Kontakt</a></div>
+      </nav>
+
+      <div class="header-extras">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="instagram-link" title="Instagram">{% include "_partials/ig-icon.html" %}</a>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Mobilná navigácia">
+  <a href="{{ base }}index.html" class="mobile-nav-link">Domov</a>
+  <a href="{{ base }}o-mne/index.html" class="mobile-nav-link">O mne</a>
+  <a href="#" class="mobile-nav-link">Zákroky ▾</a>
+  <div class="mobile-dropdown">
+    <a href="{{ base }}zakroky/krajsia-tvar/index.html" class="mobile-dropdown-link">Krajšia tvár</a>
+    <a href="{{ base }}zakroky/krajsie-prsia/index.html" class="mobile-dropdown-link">Krajšie prsia</a>
+    <a href="{{ base }}zakroky/krajsie-telo/index.html" class="mobile-dropdown-link">Krajšie telo</a>
+    <a href="{{ base }}zakroky/atraktivnejsi-muz/index.html" class="mobile-dropdown-link">Atraktívnejší muž</a>
+  </div>
+  <a href="{{ base }}bb-v-mediach/index.html" class="mobile-nav-link">FC v médiách</a>
+  <a href="{{ base }}faq/index.html" class="mobile-nav-link">FAQ</a>
+  <a href="{{ base }}kontakt/index.html" class="mobile-nav-link">Kontakt</a>
+</nav>

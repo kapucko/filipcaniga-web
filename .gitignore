@@ -1,0 +1,13 @@
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+.claude/
+__pycache__/
+*.pyc
+node_modules/
+
+# Original full-size photos — only optimized versions in fotky/web/ are deployed
+fotky/*.jpg
+!fotky/web/

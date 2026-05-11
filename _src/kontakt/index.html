@@ -1,0 +1,115 @@
+{% include "_partials/head.html" base="../" title="Kontakt — MUDr. Filip Čaniga" description="Kontaktujte MUDr. Filipa Čanigu alebo si dohodnite konzultáciu v Bratislave." %}
+
+{% include "_partials/header.html" base="../" active_kontakt=" active" %}
+
+<section class="page-hero" style="background-image: url('https://picsum.photos/1920/600?random=68');">
+  <div class="container">
+    <div class="page-hero-content">
+      <h1 class="page-hero-title">Kontakt</h1>
+      <p class="page-hero-subtitle">Dohodnite si konzultáciu alebo nám napíšte</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Contact info -->
+      <div>
+        <h2 class="section-title" style="margin-bottom:30px;">Kde ma nájdete</h2>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-info-label">Adresa ambulancie</div>
+            <div class="contact-info-value">eveclinic<br>Grösslingová 6642/7<br>811 09 Bratislava</div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">🅿️</div>
+          <div>
+            <div class="contact-info-label">Parkovanie</div>
+            <div class="contact-info-value">V okolí kliniky a parkovací dom Bottova</div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-info-label">Telefón</div>
+            <div class="contact-info-value">
+              <a href="tel:+421902711171">+421 902 711 171</a><br>
+              <small style="color:#4B4F58;">Po–Pia: 8:00 – 17:00</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-info-label">E-mail</div>
+            <div class="contact-info-value"><a href="https://www.eveclinic.sk/kontakt/" target="_blank" rel="noopener">Kontaktný formulár eveclinic</a></div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">{% include "_partials/ig-icon.html" %}</div>
+          <div>
+            <div class="contact-info-label">Instagram</div>
+            <div class="contact-info-value"><a href="https://www.instagram.com/" target="_blank" rel="noopener">@dr.filipcaniga</a></div>
+          </div>
+        </div>
+
+        <div class="map-placeholder" style="margin-top:30px;">
+          🗺️ Mapa — Grösslingová 6642/7, Bratislava
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="contact-form">
+        <h2 class="section-title" style="margin-bottom:8px; font-size:1.4rem;">Prajem si konzultáciu</h2>
+        <p style="color:#4B4F58; font-size:0.867rem; margin-bottom:24px; line-height:1.6;">Vyplňte formulár a ozvem sa Vám v čo najkratšom čase.</p>
+
+        <form action="https://formspree.io/f/mnjbynnd" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Meno a priezvisko *</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Ján Novák" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Telefón</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="+421 9XX XXX XXX" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">E-mail *</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="jan.novak@email.sk" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="procedure">Typ zákroku (nepovinné)</label>
+            <input type="text" id="procedure" name="procedure" class="form-input" placeholder="napr. rinoplastika, augmentácia prsníkov..." />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Správa *</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Napíšte nám o Vašich prianiach alebo otázkach..." required></textarea>
+          </div>
+
+          <div class="form-group" style="margin-bottom:24px;">
+            <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer; font-size:0.8rem; color:#4B4F58; line-height:1.5;">
+              <input type="checkbox" style="margin-top:2px; flex-shrink:0;" required />
+              Súhlasím so spracovaním osobných údajov v súlade s <a href="../privacy/index.html" style="color:#0170B9;">zásadami ochrany osobných údajov</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; font-size:1rem;">Odoslať správu</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "_partials/footer.html" base="../" %}
