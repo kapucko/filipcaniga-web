@@ -550,6 +550,10 @@ ul { list-style: none; }
 .footer-contact-item { display: flex; gap: 10px; margin-bottom: 10px; font-size: 0.833rem; color: rgba(255,255,255,0.5); }
 .footer-contact-item a { color: rgba(255,255,255,0.5); }
 .footer-contact-item a:hover { color: var(--gold); }
+.footer-contact-item--multiline { align-items: flex-start; margin-bottom: 14px; line-height: 1.55; }
+.footer-contact-item--multiline strong { color: rgba(255,255,255,0.85); font-weight: 600; }
+.footer-contact-item--multiline a { color: rgba(255,255,255,0.7); }
+.footer-contact-icon { flex-shrink: 0; line-height: 1.55; }
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px;
   display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
