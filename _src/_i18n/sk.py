@@ -140,4 +140,13 @@ T = {
 
     # ===== Language switcher =====
     'lang_switcher_label': 'Jazyk',
+
+    # ===== Consultation modal =====
+    'modal_title': 'Kde si želáte konzultáciu?',
+    'modal_subtitle': 'MUDr. Filip Čaniga ordinuje na dvoch klinikách. Vyberte si Vám najbližšie miesto.',
+    'modal_bratislava_name': 'eveclinic',
+    'modal_bratislava_city': 'Bratislava, Slovensko',
+    'modal_prague_name': 'Renomé Clinic',
+    'modal_prague_city': 'Praha, Česká republika',
+    'modal_close': 'Zavrieť',
 }

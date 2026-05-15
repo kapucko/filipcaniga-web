@@ -2,13 +2,58 @@
    MAIN.JS — Filip Čaniga Website
    ============================================================ */
 
-document.addEventListener('DOMContentLoaded', function () {
+function fcInit() {
 
   /* ── Remember chosen language (used by root redirect) ────── */
   document.querySelectorAll('.lang-link[data-lang]').forEach(function (a) {
     a.addEventListener('click', function () {
       try { localStorage.setItem('lang', a.dataset.lang); } catch (e) {}
     });
+  });
+
+  /* ── Consultation modal — clinic location picker ─────────── */
+  var consultationModal = document.getElementById('consultation-modal');
+  var lastFocusedBeforeModal = null;
+
+  function openConsultationModal() {
+    if (!consultationModal) return;
+    lastFocusedBeforeModal = document.activeElement;
+    consultationModal.removeAttribute('hidden');
+    document.body.classList.add('modal-open');
+    // Focus first option for keyboard users
+    var firstOption = consultationModal.querySelector('.modal-option');
+    if (firstOption) firstOption.focus();
+  }
+
+  function closeConsultationModal() {
+    if (!consultationModal) return;
+    consultationModal.setAttribute('hidden', '');
+    document.body.classList.remove('modal-open');
+    if (lastFocusedBeforeModal && lastFocusedBeforeModal.focus) {
+      lastFocusedBeforeModal.focus();
+    }
+  }
+
+  // Open modal on consultation CTA clicks
+  document.querySelectorAll('.js-book-consultation').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      openConsultationModal();
+    });
+  });
+
+  // Close modal on overlay / X / any [data-modal-close] click
+  if (consultationModal) {
+    consultationModal.addEventListener('click', function (e) {
+      if (e.target.closest('[data-modal-close]')) closeConsultationModal();
+    });
+  }
+
+  // Close on Escape
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && consultationModal && !consultationModal.hasAttribute('hidden')) {
+      closeConsultationModal();
+    }
   });
 
   /* ── Sticky header ──────────────────────────────────────── */
@@ -204,4 +249,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', fcInit);
+} else {
+  fcInit();
+}

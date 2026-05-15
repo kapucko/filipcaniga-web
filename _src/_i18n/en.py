@@ -140,4 +140,13 @@ T = {
 
     # ===== Language switcher =====
     'lang_switcher_label': 'Language',
+
+    # ===== Consultation modal =====
+    'modal_title': 'Where would you like the consultation?',
+    'modal_subtitle': 'Dr. Filip Čaniga practises at two clinics. Choose the location closest to you.',
+    'modal_bratislava_name': 'eveclinic',
+    'modal_bratislava_city': 'Bratislava, Slovakia',
+    'modal_prague_name': 'Renomé Clinic',
+    'modal_prague_city': 'Prague, Czech Republic',
+    'modal_close': 'Close',
 }
