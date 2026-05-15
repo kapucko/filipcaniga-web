@@ -5,29 +5,30 @@
       <a href="{{ base }}index.html" class="site-logo">
         <div class="logo-mark">FC</div>
         <div class="logo-text">
-          <span class="logo-name">MUDr. Filip Čaniga</span>
-          <span class="logo-title">Plastická &amp; estetická chirurgia</span>
+          <span class="logo-name">{{ doctor_full_name }}</span>
+          <span class="logo-title">{{ doctor_title }}</span>
         </div>
       </a>
 
-      <nav class="primary-nav" aria-label="Hlavná navigácia">
-        <div class="nav-item"><a href="{{ base }}index.html" class="nav-link{{ active_home }}">Domov</a></div>
-        <div class="nav-item"><a href="{{ base }}o-mne/index.html" class="nav-link{{ active_omne }}">O mne</a></div>
+      <nav class="primary-nav" aria-label="{{ nav_home }}">
+        <div class="nav-item"><a href="{{ base }}index.html" class="nav-link{{ active_home }}">{{ nav_home }}</a></div>
+        <div class="nav-item"><a href="{{ base }}o-mne/index.html" class="nav-link{{ active_omne }}">{{ nav_omne }}</a></div>
         <div class="nav-item has-sub">
-          <a href="#" class="nav-link has-dropdown{{ active_zakroky }}">Zákroky</a>
+          <a href="#" class="nav-link has-dropdown{{ active_zakroky }}">{{ nav_zakroky }}</a>
           <div class="dropdown-menu">
-            <a href="{{ base }}zakroky/krajsia-tvar/index.html" class="dropdown-link">Krajšia tvár</a>
-            <a href="{{ base }}zakroky/krajsie-prsia/index.html" class="dropdown-link">Krajšie prsia</a>
-            <a href="{{ base }}zakroky/krajsie-telo/index.html" class="dropdown-link">Krajšie telo</a>
-            <a href="{{ base }}zakroky/atraktivnejsi-muz/index.html" class="dropdown-link">Atraktívnejší muž</a>
+            <a href="{{ base }}zakroky/krajsia-tvar/index.html" class="dropdown-link">{{ nav_zakroky_tvar }}</a>
+            <a href="{{ base }}zakroky/krajsie-prsia/index.html" class="dropdown-link">{{ nav_zakroky_prsia }}</a>
+            <a href="{{ base }}zakroky/krajsie-telo/index.html" class="dropdown-link">{{ nav_zakroky_telo }}</a>
+            <a href="{{ base }}zakroky/atraktivnejsi-muz/index.html" class="dropdown-link">{{ nav_zakroky_muz }}</a>
           </div>
         </div>
-        <div class="nav-item"><a href="{{ base }}bb-v-mediach/index.html" class="nav-link{{ active_mediach }}">FC v médiách</a></div>
-        <div class="nav-item"><a href="{{ base }}faq/index.html" class="nav-link{{ active_faq }}">FAQ</a></div>
-        <div class="nav-item"><a href="{{ base }}kontakt/index.html" class="nav-link{{ active_kontakt }}">Kontakt</a></div>
+        <div class="nav-item"><a href="{{ base }}bb-v-mediach/index.html" class="nav-link{{ active_mediach }}">{{ nav_mediach }}</a></div>
+        <div class="nav-item"><a href="{{ base }}faq/index.html" class="nav-link{{ active_faq }}">{{ nav_faq }}</a></div>
+        <div class="nav-item"><a href="{{ base }}kontakt/index.html" class="nav-link{{ active_kontakt }}">{{ nav_kontakt }}</a></div>
       </nav>
 
       <div class="header-extras">
+        {% include "_partials/lang-switcher.html" %}
         <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="instagram-link" title="Instagram">{% include "_partials/ig-icon.html" %}</a>
         <button class="hamburger" aria-label="Menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -37,17 +38,17 @@
   </div>
 </header>
 
-<nav class="mobile-nav" aria-label="Mobilná navigácia">
-  <a href="{{ base }}index.html" class="mobile-nav-link">Domov</a>
-  <a href="{{ base }}o-mne/index.html" class="mobile-nav-link">O mne</a>
-  <a href="#" class="mobile-nav-link">Zákroky ▾</a>
+<nav class="mobile-nav" aria-label="{{ nav_home }}">
+  <a href="{{ base }}index.html" class="mobile-nav-link">{{ nav_home }}</a>
+  <a href="{{ base }}o-mne/index.html" class="mobile-nav-link">{{ nav_omne }}</a>
+  <a href="#" class="mobile-nav-link">{{ nav_zakroky }} ▾</a>
   <div class="mobile-dropdown">
-    <a href="{{ base }}zakroky/krajsia-tvar/index.html" class="mobile-dropdown-link">Krajšia tvár</a>
-    <a href="{{ base }}zakroky/krajsie-prsia/index.html" class="mobile-dropdown-link">Krajšie prsia</a>
-    <a href="{{ base }}zakroky/krajsie-telo/index.html" class="mobile-dropdown-link">Krajšie telo</a>
-    <a href="{{ base }}zakroky/atraktivnejsi-muz/index.html" class="mobile-dropdown-link">Atraktívnejší muž</a>
+    <a href="{{ base }}zakroky/krajsia-tvar/index.html" class="mobile-dropdown-link">{{ nav_zakroky_tvar }}</a>
+    <a href="{{ base }}zakroky/krajsie-prsia/index.html" class="mobile-dropdown-link">{{ nav_zakroky_prsia }}</a>
+    <a href="{{ base }}zakroky/krajsie-telo/index.html" class="mobile-dropdown-link">{{ nav_zakroky_telo }}</a>
+    <a href="{{ base }}zakroky/atraktivnejsi-muz/index.html" class="mobile-dropdown-link">{{ nav_zakroky_muz }}</a>
   </div>
-  <a href="{{ base }}bb-v-mediach/index.html" class="mobile-nav-link">FC v médiách</a>
-  <a href="{{ base }}faq/index.html" class="mobile-nav-link">FAQ</a>
-  <a href="{{ base }}kontakt/index.html" class="mobile-nav-link">Kontakt</a>
+  <a href="{{ base }}bb-v-mediach/index.html" class="mobile-nav-link">{{ nav_mediach }}</a>
+  <a href="{{ base }}faq/index.html" class="mobile-nav-link">{{ nav_faq }}</a>
+  <a href="{{ base }}kontakt/index.html" class="mobile-nav-link">{{ nav_kontakt }}</a>
 </nav>

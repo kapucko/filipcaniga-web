@@ -228,6 +228,18 @@ ul { list-style: none; }
 }
 .instagram-link:hover { color: #E1306C; }
 
+.lang-switcher {
+  display: flex; gap: 2px; align-items: center;
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.5px;
+}
+.lang-link {
+  color: var(--muted); text-decoration: none;
+  padding: 6px 8px; border-radius: 4px;
+  transition: color var(--transition), background var(--transition);
+}
+.lang-link:hover { color: var(--navy); background: var(--gold-pale); }
+.lang-link.active { color: var(--gold); background: var(--gold-pale); }
+
 .hamburger {
   display: none; flex-direction: column; gap: 5px;
   cursor: pointer; background: none; border: none; padding: 4px;

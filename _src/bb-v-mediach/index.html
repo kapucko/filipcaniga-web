@@ -1,11 +1,11 @@
-{% include "_partials/head.html" base="../" title="FC v médiách — MUDr. Filip Čaniga" description="MUDr. Filip Čaniga v médiách — časopisy, televízia, rozhovory a mediálne výstupy." %}
+{% include "_partials/head.html" title="{{ media_meta_title }}" description="MUDr. Filip Čaniga v médiách — časopisy, televízia, rozhovory a mediálne výstupy." %}
 
-{% include "_partials/header.html" base="../" active_mediach=" active" %}
+{% include "_partials/header.html" active_mediach=" active" %}
 
 <section class="page-hero" style="background-image: url('https://picsum.photos/1920/600?random=66');">
   <div class="container">
     <div class="page-hero-content">
-      <h1 class="page-hero-title">FC v médiách</h1>
+      <h1 class="page-hero-title">{{ media_hero_title }}</h1>
       <p class="page-hero-subtitle">Mediálne výstupy, rozhovory a odborné príspevky</p>
     </div>
   </div>
@@ -111,4 +111,4 @@
   </div>
 </section>
 
-{% include "_partials/footer.html" base="../" %}
+{% include "_partials/footer.html" %}

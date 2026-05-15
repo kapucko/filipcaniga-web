@@ -1,20 +1,17 @@
-{% include "_partials/head.html" base="" title="MUDr. Filip Čaniga — Plastická chirurgia" description="MUDr. Filip Čaniga — špecialista v oblasti plastickej a estetickej chirurgie. Pôsobí v eveclinic Bratislava." %}
+{% include "_partials/head.html" title="{{ home_meta_title }}" description="{{ home_meta_desc }}" %}
 
-{% include "_partials/header.html" base="" active_home=" active" %}
+{% include "_partials/header.html" active_home=" active" %}
 
 <!-- HERO -->
-<section class="hero" style="background-image: url('fotky/web/hero.jpg');">
+<section class="hero" style="background-image: url('{{ base }}../fotky/web/hero.jpg');">
   <div class="container">
     <div class="hero-content">
-      <p class="hero-subtitle">Plastická &amp; estetická chirurgia</p>
-      <h1 class="hero-title">Plastická chirurgia<br>v mužských rukách</h1>
-      <p class="hero-text">
-        MUDr. Filip Čaniga ponúka komplexnú starostlivosť v oblasti estetickej a rekonštrukčnej chirurgie.
-        Individuálny prístup, overené techniky a dlhoročné skúsenosti pre Vaše najlepšie výsledky.
-      </p>
+      <p class="hero-subtitle">{{ subtitle_brand }}</p>
+      <h1 class="hero-title">{{ hero_title_html }}</h1>
+      <p class="hero-text">{{ hero_text }}</p>
       <div class="hero-actions">
-        <a href="kontakt/index.html" class="btn btn-primary">Prajem si konzultáciu</a>
-        <a href="o-mne/index.html" class="btn btn-white">Viac o mne</a>
+        <a href="{{ base }}kontakt/index.html" class="btn btn-primary">{{ btn_consultation }}</a>
+        <a href="{{ base }}o-mne/index.html" class="btn btn-white">{{ btn_more_about }}</a>
       </div>
     </div>
   </div>
@@ -26,19 +23,19 @@
     <div class="stats-grid">
       <div class="stat-item fade-up">
         <div class="stat-number">7+</div>
-        <div class="stat-label">Rokov v odbore</div>
+        <div class="stat-label">{{ stats_years }}</div>
       </div>
       <div class="stat-item fade-up">
         <div class="stat-number">5+</div>
-        <div class="stat-label">Hlavných špecializácií</div>
+        <div class="stat-label">{{ stats_specs }}</div>
       </div>
       <div class="stat-item fade-up">
         <div class="stat-number">20+</div>
-        <div class="stat-label">Odborných školení</div>
+        <div class="stat-label">{{ stats_trainings }}</div>
       </div>
       <div class="stat-item fade-up">
         <div class="stat-number">EN + DE</div>
-        <div class="stat-label">Cudzie jazyky</div>
+        <div class="stat-label">{{ stats_languages }}</div>
       </div>
     </div>
   </div>
@@ -49,25 +46,19 @@
   <div class="container">
     <div class="intro-grid">
       <div class="intro-image">
-        <img src="fotky/web/portrait.jpg" alt="MUDr. Filip Čaniga" />
+        <img src="{{ base }}../fotky/web/portrait.jpg" alt="MUDr. Filip Čaniga" />
         <div class="intro-badge">
           7+
-          <small>rokov v odbore</small>
+          <small>{{ intro_badge_years }}</small>
         </div>
       </div>
       <div class="intro-text">
-        <p class="section-subtitle" style="margin-bottom:8px; color:#0170B9; font-weight:600; text-transform:uppercase; font-size:0.8rem; letter-spacing:1px;">O MUDr. Filipovi Čanigovi</p>
-        <h2 class="section-title">Atestovaný plastický chirurg<br>s prístupom k detailu</h2>
-        <p>
-          Som atestovaný plastický chirurg pôsobiaci v Bratislave. Venujem sa celému spektru estetickej a rekonštrukčnej chirurgie — od augmentácie prsníkov a liposukcie, cez blefaroplastiku a otoplastiku, až po komplexnejšie zákroky ako abdominoplastika.
-        </p>
-        <p>
-          Ku každému pacientovi pristupujem individuálne — verím, že najlepšie výsledky vznikajú spoluprácou a otvoreným rozhovorom. Pri zväčšovaní pŕs využívam modernú metódu Preservé™, ktorá kladie dôraz na šetrnosť a prirodzený výsledok.
-        </p>
-        <p>
-          Kvalita je pre mňa kľúčová, preto sa neustále vzdelávam — pravidelne sa zúčastňujem medzinárodných kongresov a masterclass workshopov vrátane Marbelly a Düsseldorfu. Plynulo komunikujem v angličtine a nemčine.
-        </p>
-        <a href="o-mne/index.html" class="btn btn-outline" style="margin-top:12px;">Spoznajte ma bližšie</a>
+        <p class="section-subtitle" style="margin-bottom:8px; color:#0170B9; font-weight:600; text-transform:uppercase; font-size:0.8rem; letter-spacing:1px;">{{ intro_label }}</p>
+        <h2 class="section-title">{{ intro_title_html }}</h2>
+        <p>{{ intro_p1 }}</p>
+        <p>{{ intro_p2 }}</p>
+        <p>{{ intro_p3 }}</p>
+        <a href="{{ base }}o-mne/index.html" class="btn btn-outline" style="margin-top:12px;">{{ btn_meet_me }}</a>
       </div>
     </div>
   </div>
@@ -77,39 +68,21 @@
 <section class="section section--gray">
   <div class="container">
     <div class="section-header section-header--center">
-      <h2 class="section-title">Pacienti, ktorí mi dôverujú</h2>
-      <p class="section-subtitle">Dlhoročná spolupráca so spokojnými klientmi z celého Slovenska a zahraničia.</p>
+      <h2 class="section-title">{{ celebs_title }}</h2>
+      <p class="section-subtitle">{{ celebs_subtitle }}</p>
     </div>
 
     <div class="celebrity-carousel" style="position:relative; padding: 0 30px;">
       <div class="carousel-track">
-        <div class="celebrity-card">
-          <img src="https://picsum.photos/300/400?random=11" alt="Klient 1" />
-          <span>Martin K.</span>
-        </div>
-        <div class="celebrity-card">
-          <img src="https://picsum.photos/300/400?random=12" alt="Klient 2" />
-          <span>Jana P.</span>
-        </div>
-        <div class="celebrity-card">
-          <img src="https://picsum.photos/300/400?random=13" alt="Klient 3" />
-          <span>Lucia S.</span>
-        </div>
-        <div class="celebrity-card">
-          <img src="https://picsum.photos/300/400?random=14" alt="Klient 4" />
-          <span>Peter V.</span>
-        </div>
-        <div class="celebrity-card">
-          <img src="https://picsum.photos/300/400?random=15" alt="Klient 5" />
-          <span>Monika R.</span>
-        </div>
-        <div class="celebrity-card">
-          <img src="https://picsum.photos/300/400?random=16" alt="Klient 6" />
-          <span>Tomáš H.</span>
-        </div>
+        <div class="celebrity-card"><img src="https://picsum.photos/300/400?random=11" alt="Klient 1" /><span>Martin K.</span></div>
+        <div class="celebrity-card"><img src="https://picsum.photos/300/400?random=12" alt="Klient 2" /><span>Jana P.</span></div>
+        <div class="celebrity-card"><img src="https://picsum.photos/300/400?random=13" alt="Klient 3" /><span>Lucia S.</span></div>
+        <div class="celebrity-card"><img src="https://picsum.photos/300/400?random=14" alt="Klient 4" /><span>Peter V.</span></div>
+        <div class="celebrity-card"><img src="https://picsum.photos/300/400?random=15" alt="Klient 5" /><span>Monika R.</span></div>
+        <div class="celebrity-card"><img src="https://picsum.photos/300/400?random=16" alt="Klient 6" /><span>Tomáš H.</span></div>
       </div>
-      <button class="carousel-btn carousel-btn--prev" aria-label="Predchádzajúci">&#8592;</button>
-      <button class="carousel-btn carousel-btn--next" aria-label="Nasledujúci">&#8594;</button>
+      <button class="carousel-btn carousel-btn--prev" aria-label="Prev">&#8592;</button>
+      <button class="carousel-btn carousel-btn--next" aria-label="Next">&#8594;</button>
     </div>
   </div>
 </section>
@@ -118,44 +91,44 @@
 <section class="section">
   <div class="container">
     <div class="section-header section-header--center">
-      <h2 class="section-title">Zákroky</h2>
-      <p class="section-subtitle">Ponúkam širokú škálu estetických a rekonštrukčných procedúr prispôsobených Vašim potrebám.</p>
+      <h2 class="section-title">{{ procedures_title }}</h2>
+      <p class="section-subtitle">{{ procedures_subtitle }}</p>
     </div>
 
     <div class="grid-4">
-      <a href="zakroky/krajsia-tvar/index.html" class="procedure-card">
-        <img src="https://picsum.photos/600/400?random=21" alt="Krajšia tvár" />
+      <a href="{{ base }}zakroky/krajsia-tvar/index.html" class="procedure-card">
+        <img src="https://picsum.photos/600/400?random=21" alt="{{ nav_zakroky_tvar }}" />
         <div class="procedure-card-body">
-          <h3 class="procedure-card-title">Krajšia tvár</h3>
-          <p class="procedure-card-text">Rinoplastika, blefaroplastika, lifting tváre a ďalšie procedúry pre harmonickú tvár.</p>
-          <span class="procedure-card-link">Zistiť viac →</span>
+          <h3 class="procedure-card-title">{{ nav_zakroky_tvar }}</h3>
+          <p class="procedure-card-text">{{ proc_face_text }}</p>
+          <span class="procedure-card-link">{{ btn_learn_more }}</span>
         </div>
       </a>
 
-      <a href="zakroky/krajsie-prsia/index.html" class="procedure-card">
-        <img src="https://picsum.photos/600/400?random=22" alt="Krajšie prsia" />
+      <a href="{{ base }}zakroky/krajsie-prsia/index.html" class="procedure-card">
+        <img src="https://picsum.photos/600/400?random=22" alt="{{ nav_zakroky_prsia }}" />
         <div class="procedure-card-body">
-          <h3 class="procedure-card-title">Krajšie prsia</h3>
-          <p class="procedure-card-text">Augmentácia, redukcia, lifting a rekonštrukcia prsníkov s dôrazom na prirodzený výsledok.</p>
-          <span class="procedure-card-link">Zistiť viac →</span>
+          <h3 class="procedure-card-title">{{ nav_zakroky_prsia }}</h3>
+          <p class="procedure-card-text">{{ proc_breast_text }}</p>
+          <span class="procedure-card-link">{{ btn_learn_more }}</span>
         </div>
       </a>
 
-      <a href="zakroky/krajsie-telo/index.html" class="procedure-card">
-        <img src="https://picsum.photos/600/400?random=23" alt="Krajšie telo" />
+      <a href="{{ base }}zakroky/krajsie-telo/index.html" class="procedure-card">
+        <img src="https://picsum.photos/600/400?random=23" alt="{{ nav_zakroky_telo }}" />
         <div class="procedure-card-body">
-          <h3 class="procedure-card-title">Krajšie telo</h3>
-          <p class="procedure-card-text">Liposukcia, abdominoplastika, modelovanie siluety a ďalšie procedúry pre telo.</p>
-          <span class="procedure-card-link">Zistiť viac →</span>
+          <h3 class="procedure-card-title">{{ nav_zakroky_telo }}</h3>
+          <p class="procedure-card-text">{{ proc_body_text }}</p>
+          <span class="procedure-card-link">{{ btn_learn_more }}</span>
         </div>
       </a>
 
-      <a href="zakroky/atraktivnejsi-muz/index.html" class="procedure-card">
-        <img src="https://picsum.photos/600/400?random=24" alt="Atraktívnejší muž" />
+      <a href="{{ base }}zakroky/atraktivnejsi-muz/index.html" class="procedure-card">
+        <img src="https://picsum.photos/600/400?random=24" alt="{{ nav_zakroky_muz }}" />
         <div class="procedure-card-body">
-          <h3 class="procedure-card-title">Atraktívnejší muž</h3>
-          <p class="procedure-card-text">Zákroky špeciálne navrhnuté pre mužov — gynekomastia, modelovanie, liposukcia.</p>
-          <span class="procedure-card-link">Zistiť viac →</span>
+          <h3 class="procedure-card-title">{{ nav_zakroky_muz }}</h3>
+          <p class="procedure-card-text">{{ proc_men_text }}</p>
+          <span class="procedure-card-link">{{ btn_learn_more }}</span>
         </div>
       </a>
     </div>
@@ -166,15 +139,15 @@
 <section class="section section--gray">
   <div class="container">
     <div class="section-header section-header--center">
-      <h2 class="section-title">Hodnotenia pacientov</h2>
-      <p class="section-subtitle">Spokojnosť pacientov je pre mňa na prvom mieste. Prečítajte si ich príbehy.</p>
+      <h2 class="section-title">{{ testimonials_title }}</h2>
+      <p class="section-subtitle">{{ testimonials_subtitle }}</p>
     </div>
 
     <div class="testimonial-carousel" style="position:relative; padding: 0 30px;">
       <div class="testimonials-track">
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend libero at lobortis mollis."</p>
+          <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue."</p>
           <div class="testimonial-author">
             <img src="https://picsum.photos/100/100?random=31" alt="Anna B." />
             <div>
@@ -186,7 +159,7 @@
 
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Proin vel purus vel ante aliquet laoreet a vel nibh. Vestibulum ante ipsum primis in faucibus orci luctus. Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula."</p>
+          <p class="testimonial-text">"Proin vel purus vel ante aliquet laoreet a vel nibh. Vestibulum ante ipsum primis in faucibus orci luctus."</p>
           <div class="testimonial-author">
             <img src="https://picsum.photos/100/100?random=32" alt="Marek T." />
             <div>
@@ -198,7 +171,7 @@
 
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."</p>
+          <p class="testimonial-text">"Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit."</p>
           <div class="testimonial-author">
             <img src="https://picsum.photos/100/100?random=33" alt="Zuzana K." />
             <div>
@@ -208,8 +181,8 @@
           </div>
         </div>
       </div>
-      <button class="carousel-btn carousel-btn--prev" aria-label="Predchádzajúci">&#8592;</button>
-      <button class="carousel-btn carousel-btn--next" aria-label="Nasledujúci">&#8594;</button>
+      <button class="carousel-btn carousel-btn--prev" aria-label="Prev">&#8592;</button>
+      <button class="carousel-btn carousel-btn--next" aria-label="Next">&#8594;</button>
     </div>
   </div>
 </section>
@@ -217,9 +190,9 @@
 <!-- CTA BANNER -->
 <section class="cta-banner">
   <div class="container">
-    <h2 class="section-title">Krásni, mladší, šťastnejší</h2>
-    <p class="section-subtitle">Dohodnite si nezáväznú konzultáciu a spoločne nájdeme najlepšie riešenie pre Vás.</p>
-    <a href="kontakt/index.html" class="btn btn-white">Prajem si konzultáciu</a>
+    <h2 class="section-title">{{ cta_title }}</h2>
+    <p class="section-subtitle">{{ cta_subtitle }}</p>
+    <a href="{{ base }}kontakt/index.html" class="btn btn-white">{{ btn_consultation }}</a>
   </div>
 </section>
 
@@ -227,8 +200,8 @@
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Kde ma nájdete</h2>
-      <p class="section-subtitle">Ordinujem v centre Bratislavy. Kontaktujte ma pre viac informácií alebo objednajte sa na konzultáciu.</p>
+      <h2 class="section-title">{{ contact_title }}</h2>
+      <p class="section-subtitle">{{ contact_subtitle }}</p>
     </div>
 
     <div class="contact-grid">
@@ -236,36 +209,36 @@
         <div class="contact-info-item">
           <div class="contact-icon">📍</div>
           <div>
-            <div class="contact-info-label">Adresa</div>
-            <div class="contact-info-value">eveclinic<br>Grösslingová 6642/7<br>811 09 Bratislava</div>
+            <div class="contact-info-label">{{ contact_label_address }}</div>
+            <div class="contact-info-value">{{ contact_value_address_html }}</div>
           </div>
         </div>
         <div class="contact-info-item">
           <div class="contact-icon">🅿️</div>
           <div>
-            <div class="contact-info-label">Parkovanie</div>
-            <div class="contact-info-value">V okolí kliniky a parkovací dom Bottova</div>
+            <div class="contact-info-label">{{ contact_label_parking }}</div>
+            <div class="contact-info-value">{{ contact_value_parking }}</div>
           </div>
         </div>
         <div class="contact-info-item">
           <div class="contact-icon">📞</div>
           <div>
-            <div class="contact-info-label">Telefón</div>
+            <div class="contact-info-label">{{ contact_label_phone }}</div>
             <div class="contact-info-value"><a href="tel:+421902711171">+421 902 711 171</a></div>
           </div>
         </div>
         <div class="contact-info-item">
           <div class="contact-icon">✉️</div>
           <div>
-            <div class="contact-info-label">E-mail</div>
-            <div class="contact-info-value"><a href="https://www.eveclinic.sk/kontakt/" target="_blank" rel="noopener">Kontaktný formulár eveclinic</a></div>
+            <div class="contact-info-label">{{ contact_label_email }}</div>
+            <div class="contact-info-value"><a href="https://www.eveclinic.sk/kontakt/" target="_blank" rel="noopener">{{ contact_email_link }}</a></div>
           </div>
         </div>
-        <a href="kontakt/index.html" class="btn btn-primary" style="margin-top:8px;">Objednať konzultáciu</a>
+        <a href="{{ base }}kontakt/index.html" class="btn btn-primary" style="margin-top:8px;">{{ btn_consultation_short }}</a>
       </div>
 
       <div class="map-placeholder">
-        🗺️ Mapa — Grösslingová 6642/7, Bratislava
+        🗺️ Grösslingová 6642/7, Bratislava
       </div>
     </div>
   </div>
@@ -275,17 +248,17 @@
 <section class="instagram-section section--gray">
   <div class="container">
     <div class="instagram-header">
-      <p class="instagram-handle">Sledujte ma na <a href="https://www.instagram.com/" target="_blank" rel="noopener">@dr.filipcaniga</a></p>
+      <p class="instagram-handle">{{ instagram_handle_text }} <a href="https://www.instagram.com/" target="_blank" rel="noopener">@dr.filipcaniga</a></p>
     </div>
     <div class="instagram-grid">
-      {% include "_partials/ig-tile.html" base="" img="ig-1.jpg" %}
-      {% include "_partials/ig-tile.html" base="" img="ig-2.jpg" %}
-      {% include "_partials/ig-tile.html" base="" img="ig-3.jpg" %}
-      {% include "_partials/ig-tile.html" base="" img="ig-4.jpg" %}
-      {% include "_partials/ig-tile.html" base="" img="ig-5.jpg" %}
-      {% include "_partials/ig-tile.html" base="" img="ig-6.jpg" %}
+      {% include "_partials/ig-tile.html" img="ig-1.jpg" %}
+      {% include "_partials/ig-tile.html" img="ig-2.jpg" %}
+      {% include "_partials/ig-tile.html" img="ig-3.jpg" %}
+      {% include "_partials/ig-tile.html" img="ig-4.jpg" %}
+      {% include "_partials/ig-tile.html" img="ig-5.jpg" %}
+      {% include "_partials/ig-tile.html" img="ig-6.jpg" %}
     </div>
   </div>
 </section>
 
-{% include "_partials/footer.html" base="" %}
+{% include "_partials/footer.html" %}

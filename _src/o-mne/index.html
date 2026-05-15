@@ -1,13 +1,13 @@
-{% include "_partials/head.html" base="../" title="O mne — MUDr. Filip Čaniga" description="Spoznajte MUDr. Filipa Čanigu, MPH — atestovaného plastického chirurga pôsobiaceho v eveclinic Bratislava." %}
+{% include "_partials/head.html" title="{{ omne_meta_title }}" description="{{ omne_meta_desc }}" %}
 
-{% include "_partials/header.html" base="../" active_omne=" active" %}
+{% include "_partials/header.html" active_omne=" active" %}
 
 <!-- Page Hero -->
-<section class="page-hero" style="background-image: url('../fotky/web/about-banner.jpg');">
+<section class="page-hero" style="background-image: url('{{ base }}../fotky/web/about-banner.jpg');">
   <div class="container">
     <div class="page-hero-content">
-      <h1 class="page-hero-title">O mne</h1>
-      <p class="page-hero-subtitle">Atestovaný plastický chirurg s pasiou pre estetickú a rekonštrukčnú chirurgiu</p>
+      <h1 class="page-hero-title">{{ omne_hero_title }}</h1>
+      <p class="page-hero-subtitle">{{ omne_hero_subtitle }}</p>
     </div>
   </div>
 </section>
@@ -17,11 +17,11 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-image">
-        <img src="../fotky/web/about-portrait.jpg" alt="MUDr. Filip Čaniga" />
+        <img src="{{ base }}../fotky/web/about-portrait.jpg" alt="MUDr. Filip Čaniga" />
       </div>
       <div class="about-content">
-        <p class="section-subtitle" style="margin-bottom:8px; color:#0170B9; font-weight:600; text-transform:uppercase; font-size:0.8rem; letter-spacing:1px;">MUDr. Filip Čaniga, MPH</p>
-        <h2 class="section-title" style="margin-bottom:24px;">Plastický chirurg<br>s vášňou pre detail</h2>
+        <p class="section-subtitle" style="margin-bottom:8px; color:#0170B9; font-weight:600; text-transform:uppercase; font-size:0.8rem; letter-spacing:1px;">{{ omne_label }}</p>
+        <h2 class="section-title" style="margin-bottom:24px;">{{ omne_title_html }}</h2>
 
         <p>Som atestovaný plastický chirurg pôsobiaci v Bratislave. Venujem sa celému spektru estetickej a rekonštrukčnej chirurgie — od augmentácie prsníkov a liposukcie, cez blefaroplastiku a otoplastiku, až po komplexnejšie zákroky ako abdominoplastika s riešením diastázy či gynekomastia.</p>
 
@@ -45,7 +45,7 @@
 <section class="section section--gray">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Vzdelanie a skúsenosti</h2>
+      <h2 class="section-title">{{ omne_education_title }}</h2>
     </div>
     <div class="accordion-wrap" style="max-width:800px;">
       <div class="accordion-item">
@@ -115,4 +115,4 @@
   </div>
 </section>
 
-{% include "_partials/footer.html" base="../" %}
+{% include "_partials/footer.html" %}
