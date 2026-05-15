@@ -14,14 +14,15 @@ fotky/*.jpg
 
 # Built HTML pages — generated from _src/ by build.py (and in CI by GitHub Actions)
 /index.html
-/bb-v-mediach/index.html
-/cookies/index.html
-/faq/index.html
-/kontakt/index.html
-/o-mne/index.html
-/privacy/index.html
-/zakroky/atraktivnejsi-muz/index.html
-/zakroky/krajsia-tvar/index.html
-/zakroky/krajsia-tvar/rhinoplastika/index.html
-/zakroky/krajsie-prsia/index.html
-/zakroky/krajsie-telo/index.html
+/sk/
+/en/
+/de/
+
+# Old root-level built pages from before i18n (no longer generated, kept ignored)
+/bb-v-mediach/
+/cookies/
+/faq/
+/kontakt/
+/o-mne/
+/privacy/
+/zakroky/
