@@ -5,19 +5,19 @@
     <h2 class="modal-title" id="consultation-modal-title">{{ modal_title }}</h2>
     <p class="modal-subtitle">{{ modal_subtitle }}</p>
     <div class="modal-options">
-      <a href="https://www.eveclinic.sk/objednat-na-konzultaciu/#personal_consult_form" class="modal-option" target="_blank" rel="noopener" data-clinic="bratislava">
-        <span class="modal-option-flag" aria-hidden="true">🇸🇰</span>
+      <a href="{{ clinic_bratislava_booking_url }}" class="modal-option" target="_blank" rel="noopener" data-clinic="bratislava">
+        <span class="modal-option-flag" aria-hidden="true">{{ clinic_bratislava_flag }}</span>
         <span class="modal-option-text">
-          <span class="modal-option-name">{{ modal_bratislava_name }}</span>
-          <span class="modal-option-city">{{ modal_bratislava_city }}</span>
+          <span class="modal-option-name">{{ clinic_bratislava_name }}</span>
+          <span class="modal-option-city">{{ clinic_bratislava_city }}</span>
         </span>
         <span class="modal-option-arrow" aria-hidden="true">→</span>
       </a>
-      <a href="https://renomeclinic.cz/kontakt/?selected_doctor=MUDr.%20Filip%20%C4%8Caniga" class="modal-option" target="_blank" rel="noopener" data-clinic="prague">
-        <span class="modal-option-flag" aria-hidden="true">🇨🇿</span>
+      <a href="{{ clinic_prague_booking_url }}" class="modal-option" target="_blank" rel="noopener" data-clinic="prague">
+        <span class="modal-option-flag" aria-hidden="true">{{ clinic_prague_flag }}</span>
         <span class="modal-option-text">
-          <span class="modal-option-name">{{ modal_prague_name }}</span>
-          <span class="modal-option-city">{{ modal_prague_city }}</span>
+          <span class="modal-option-name">{{ clinic_prague_name }}</span>
+          <span class="modal-option-city">{{ clinic_prague_city }}</span>
         </span>
         <span class="modal-option-arrow" aria-hidden="true">→</span>
       </a>

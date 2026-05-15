@@ -1,0 +1,30 @@
+<article class="clinic-card">
+  <header class="clinic-card-header">
+    <span class="clinic-card-flag" aria-hidden="true">{{ flag }}</span>
+    <div class="clinic-card-title-wrap">
+      <h3 class="clinic-card-name">{{ name }}</h3>
+      <p class="clinic-card-city">{{ city }}</p>
+    </div>
+  </header>
+
+  <ul class="clinic-card-info">
+    <li>
+      <span class="clinic-card-icon" aria-hidden="true">📍</span>
+      <span class="clinic-card-text">{{ address_html }}</span>
+    </li>
+    <li>
+      <span class="clinic-card-icon" aria-hidden="true">📞</span>
+      <span class="clinic-card-text"><a href="{{ phone_link }}">{{ phone }}</a></span>
+    </li>
+    <li>
+      <span class="clinic-card-icon" aria-hidden="true">🕐</span>
+      <span class="clinic-card-text">{{ hours_html }}</span>
+    </li>
+    <li>
+      <span class="clinic-card-icon" aria-hidden="true">🅿️</span>
+      <span class="clinic-card-text">{{ parking }}</span>
+    </li>
+  </ul>
+
+  <a href="{{ booking_url }}" target="_blank" rel="noopener" class="btn btn-primary clinic-card-btn">{{ clinic_btn_book }} →</a>
+</article>

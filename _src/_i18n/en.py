@@ -32,7 +32,7 @@ T = {
     'doctor_title': 'Plastic & aesthetic surgery',
 
     # ===== Footer =====
-    'footer_desc': 'Board-certified plastic surgeon at eveclinic Bratislava. Specialist in aesthetic and reconstructive surgery of the face, breasts, and body.',
+    'footer_desc': 'Board-certified plastic surgeon practising in Bratislava and Prague. Specialist in aesthetic and reconstructive surgery of the face, breasts, and body.',
     'footer_col_zakroky': 'Procedures',
     'footer_col_navigation': 'Navigation',
     'footer_col_kontakt': 'Contact',
@@ -82,7 +82,7 @@ T = {
     'cta_subtitle': 'Book a no-obligation consultation and we’ll find the best solution together.',
 
     'contact_title': 'Where to find me',
-    'contact_subtitle': 'I practise in central Bratislava. Get in touch for more information or to book a consultation.',
+    'contact_subtitle': 'I practise in Bratislava and Prague. Choose your nearest clinic and book a consultation.',
     'contact_label_address': 'Address',
     'contact_label_parking': 'Parking',
     'contact_label_phone': 'Phone',
@@ -144,9 +144,37 @@ T = {
     # ===== Consultation modal =====
     'modal_title': 'Where would you like the consultation?',
     'modal_subtitle': 'Dr. Filip Čaniga practises at two clinics. Choose the location closest to you.',
-    'modal_bratislava_name': 'eveclinic',
-    'modal_bratislava_city': 'Bratislava, Slovakia',
-    'modal_prague_name': 'Renomé Clinic',
-    'modal_prague_city': 'Prague, Czech Republic',
     'modal_close': 'Close',
+
+    # ===== CLINIC DATA — single source of truth =====
+    'clinic_bratislava_flag': '🇸🇰',
+    'clinic_bratislava_name': 'eveclinic',
+    'clinic_bratislava_city': 'Bratislava, Slovakia',
+    'clinic_bratislava_address_html': 'Grösslingová 6642/7<br>811 09 Bratislava',
+    'clinic_bratislava_address_inline': 'Grösslingová 6642/7, 811 09 Bratislava',
+    'clinic_bratislava_phone': '+421 902 711 171',
+    'clinic_bratislava_phone_link': 'tel:+421902711171',
+    'clinic_bratislava_hours_html': 'Mon–Thu: 8:00 – 18:00<br>Fri: 8:00 – 16:30',
+    'clinic_bratislava_parking': 'Around the clinic and Bottova parking garage',
+    'clinic_bratislava_booking_url': 'https://www.eveclinic.sk/objednat-na-konzultaciu/#personal_consult_form',
+    'clinic_bratislava_contact_url': 'https://www.eveclinic.sk/kontakt/',
+
+    'clinic_prague_flag': '🇨🇿',
+    'clinic_prague_name': 'Renomé Clinic',
+    'clinic_prague_city': 'Prague, Czech Republic',
+    'clinic_prague_address_html': 'Radlická 365/154<br>158 00 Prague 5<br><small>Nová Waltrovka complex, Metalica building</small>',
+    'clinic_prague_address_inline': 'Radlická 365/154, 158 00 Prague 5',
+    'clinic_prague_phone': '+420 739 044 221',
+    'clinic_prague_phone_link': 'tel:+420739044221',
+    'clinic_prague_hours_html': 'Mon–Fri: 8:00 – 17:00',
+    'clinic_prague_parking': 'Underground parking in the building (30 min free)',
+    'clinic_prague_booking_url': 'https://renomeclinic.cz/kontakt/?selected_doctor=MUDr.%20Filip%20%C4%8Caniga',
+    'clinic_prague_contact_url': 'https://renomeclinic.cz/kontakt/',
+
+    # ===== Clinic card labels =====
+    'clinic_label_address': 'Address',
+    'clinic_label_phone': 'Phone',
+    'clinic_label_hours': 'Opening hours',
+    'clinic_label_parking': 'Parking',
+    'clinic_btn_book': 'Book consultation',
 }

@@ -204,43 +204,7 @@
       <p class="section-subtitle">{{ contact_subtitle }}</p>
     </div>
 
-    <div class="contact-grid">
-      <div>
-        <div class="contact-info-item">
-          <div class="contact-icon">📍</div>
-          <div>
-            <div class="contact-info-label">{{ contact_label_address }}</div>
-            <div class="contact-info-value">{{ contact_value_address_html }}</div>
-          </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-icon">🅿️</div>
-          <div>
-            <div class="contact-info-label">{{ contact_label_parking }}</div>
-            <div class="contact-info-value">{{ contact_value_parking }}</div>
-          </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-icon">📞</div>
-          <div>
-            <div class="contact-info-label">{{ contact_label_phone }}</div>
-            <div class="contact-info-value"><a href="tel:+421902711171">+421 902 711 171</a></div>
-          </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-icon">✉️</div>
-          <div>
-            <div class="contact-info-label">{{ contact_label_email }}</div>
-            <div class="contact-info-value"><a href="https://www.eveclinic.sk/kontakt/" target="_blank" rel="noopener">{{ contact_email_link }}</a></div>
-          </div>
-        </div>
-        <a href="{{ base }}kontakt/index.html" class="btn btn-primary js-book-consultation" style="margin-top:8px;">{{ btn_consultation_short }}</a>
-      </div>
-
-      <div class="map-placeholder">
-        🗺️ Grösslingová 6642/7, Bratislava
-      </div>
-    </div>
+    {% include "_partials/clinics-grid.html" %}
   </div>
 </section>
 

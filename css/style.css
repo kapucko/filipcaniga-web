@@ -882,3 +882,92 @@ ul { list-style: none; }
 
 /* Lock body scroll when modal open */
 body.modal-open { overflow: hidden; }
+
+/* ============================================================
+   CLINICS GRID — homepage + kontakt page
+   ============================================================ */
+.clinics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.clinic-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+.clinic-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 12px 32px rgba(27, 43, 75, 0.08);
+  transform: translateY(-3px);
+}
+.clinic-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.clinic-card-flag {
+  font-size: 2.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.clinic-card-title-wrap { flex: 1; }
+.clinic-card-name {
+  font-family: var(--font-serif, 'Playfair Display', Georgia, serif);
+  font-size: 1.4rem;
+  color: var(--navy);
+  margin: 0 0 4px;
+  font-weight: 700;
+}
+.clinic-card-city {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0;
+}
+.clinic-card-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+.clinic-card-info li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--body);
+}
+.clinic-card-icon {
+  font-size: 1.05rem;
+  flex-shrink: 0;
+  width: 24px;
+  text-align: center;
+  line-height: 1.4;
+}
+.clinic-card-text { flex: 1; }
+.clinic-card-text a { color: var(--navy); font-weight: 600; }
+.clinic-card-text a:hover { color: var(--gold); }
+.clinic-card-text small { color: var(--muted); font-size: 0.78rem; display: block; margin-top: 2px; }
+.clinic-card-btn {
+  align-self: stretch;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .clinics-grid { grid-template-columns: 1fr; gap: 18px; }
+  .clinic-card { padding: 24px; }
+}

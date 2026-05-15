@@ -36,9 +36,8 @@
 
       <div>
         <h4 class="footer-col-title">{{ footer_col_kontakt }}</h4>
-        <div class="footer-contact-item">📍 eveclinic, Grösslingová 6642/7, 811 09 Bratislava</div>
-        <div class="footer-contact-item"><a href="tel:+421902711171">📞 +421 902 711 171</a></div>
-        <div class="footer-contact-item"><a href="https://www.eveclinic.sk/kontakt/" target="_blank" rel="noopener">✉️ {{ footer_contact_form }}</a></div>
+        <div class="footer-contact-item">{{ clinic_bratislava_flag }} {{ clinic_bratislava_name }} — {{ clinic_bratislava_city }}<br><a href="{{ clinic_bratislava_phone_link }}">{{ clinic_bratislava_phone }}</a></div>
+        <div class="footer-contact-item">{{ clinic_prague_flag }} {{ clinic_prague_name }} — {{ clinic_prague_city }}<br><a href="{{ clinic_prague_phone_link }}">{{ clinic_prague_phone }}</a></div>
         <div class="footer-contact-item"><a href="https://www.instagram.com/" target="_blank" rel="noopener">{% include "_partials/ig-icon.html" %} @dr.filipcaniga</a></div>
       </div>
     </div>
