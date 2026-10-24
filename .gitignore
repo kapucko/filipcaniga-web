@@ -11,6 +11,8 @@ node_modules/
 # Original full-size photos — only optimized versions in fotky/web/ are deployed
 fotky/*.jpg
 !fotky/web/
+fotky_nove_filip/
+fotky_pred_po_filip/
 
 # Built HTML pages — generated from _src/ by build.py (and in CI by GitHub Actions)
 /index.html

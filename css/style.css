@@ -26,7 +26,8 @@
    ============================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; font-size: 15px; }
+html { scroll-behavior: smooth; font-size: 16px; }
+@media (min-width: 922px) { html { font-size: 17px; } }
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -717,6 +718,43 @@ ul { list-style: none; }
   padding: 5px 14px; font-size: 0.73rem; font-weight: 700;
   border-radius: 4px; letter-spacing: 1.5px; text-transform: uppercase;
   backdrop-filter: blur(4px);
+}
+
+.ba-section { margin-top: 70px; }
+.ba-note { color: var(--muted); margin: 8px 0 28px; font-size: 0.933rem; }
+
+/* Specializations (homepage) */
+.spec-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.spec-card {
+  background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 30px 26px; display: flex; flex-direction: column;
+  box-shadow: var(--shadow-sm); transition: box-shadow var(--transition), border-color var(--transition);
+}
+.spec-card:hover { box-shadow: var(--shadow-md); border-color: var(--gold); }
+.spec-num { font-family: 'Playfair Display', Georgia, serif; font-size: 1.9rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 18px; }
+.spec-title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+.spec-text { font-size: 0.867rem; color: var(--muted); line-height: 1.7; margin-bottom: 22px; flex: 1; }
+.spec-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.spec-link { font-size: 0.833rem; font-weight: 700; color: var(--navy); }
+.spec-link:hover { color: var(--gold); text-decoration: none; }
+.spec-note { text-align: center; font-size: 0.8rem; color: var(--muted); margin-top: 28px; }
+.btn-sm { padding: 10px 20px; font-size: 0.8rem; }
+@media (max-width: 921px) { .spec-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 544px) { .spec-grid { grid-template-columns: 1fr; } }
+
+/* Click-to-reveal before/after (procedure pages) */
+.ba-locked { text-align: center; background: var(--white); border: 1px dashed var(--border); border-radius: var(--radius); padding: 40px 24px; }
+.ba-locked .ba-note { max-width: 560px; margin: 8px auto 24px; }
+.ba-locked .section-title::after { margin-left: auto; margin-right: auto; }
+.ba-locked-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+
+/* Before/after gallery modal */
+.modal--gallery .modal-dialog { max-width: 1100px; max-height: calc(100vh - 40px); overflow-y: auto; padding: 40px 32px 32px; }
+.ba-modal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; align-items: start; }
+.ba-modal-grid img { width: 100%; height: auto; display: block; border-radius: var(--radius); background: #000; }
+@media (max-width: 544px) {
+  .modal--gallery .modal-dialog { padding: 36px 14px 18px; }
+  .ba-modal-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
 }
 
 /* ============================================================

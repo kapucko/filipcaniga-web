@@ -2,7 +2,7 @@
 
 {% include "_partials/header.html" active_zakroky=" active" %}
 
-<section class="page-hero" style="background-image: url('https://picsum.photos/1920/600?random=65');">
+<section class="page-hero" style="background-image: url('{{ base }}../fotky/web/hero-muz.jpg');">
   <div class="container">
     <div class="page-hero-content">
       <h1 class="page-hero-title">{{ muz_hero_title }}</h1>
@@ -18,13 +18,23 @@
       <p class="section-subtitle">Záujem mužov o estetickú chirurgiu rastie. Ponúkam zákroky špeciálne prispôsobené mužskej anatómii a estetickým ideálom pre prirodzený a mužný výsledok.</p>
     </div>
     <div class="grid-4" style="grid-template-columns: repeat(3, 1fr);">
-      <a href="#" class="proc-grid-card"><img src="https://picsum.photos/600/300?random=141" alt="Gynekomastia" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Gynekomastia</div></div></a>
-      <a href="#" class="proc-grid-card"><img src="https://picsum.photos/600/300?random=142" alt="Liposukcia pre mužov" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Liposukcia pre mužov</div></div></a>
-      <a href="#" class="proc-grid-card"><img src="https://picsum.photos/600/300?random=143" alt="Rinoplastika pre mužov" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Rinoplastika pre mužov</div></div></a>
-      <a href="#" class="proc-grid-card"><img src="https://picsum.photos/600/300?random=144" alt="Blefaroplastika pre mužov" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Blefaroplastika pre mužov</div></div></a>
-      <a href="#" class="proc-grid-card"><img src="https://picsum.photos/600/300?random=145" alt="Abdominoplastika pre mužov" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Abdominoplastika pre mužov</div></div></a>
-      <a href="#" class="proc-grid-card"><img src="https://picsum.photos/600/300?random=146" alt="Korekcia uší pre mužov" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Korekcia uší pre mužov</div></div></a>
+      <a href="#" class="proc-grid-card"><img src="{{ base }}../fotky/web/work-scrubs.jpg" loading="lazy" alt="Gynekomastia" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Gynekomastia</div></div></a>
+      <a href="#" class="proc-grid-card"><img src="{{ base }}../fotky/web/work-vaser.jpg" loading="lazy" alt="Liposukcia pre mužov" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Liposukcia pre mužov</div></div></a>
+      <a href="#" class="proc-grid-card"><img src="{{ base }}../fotky/web/work-op-5.jpg" loading="lazy" alt="Rinoplastika pre mužov" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Rinoplastika pre mužov</div></div></a>
+      <a href="#" class="proc-grid-card"><img src="{{ base }}../fotky/web/work-op-1.jpg" loading="lazy" alt="Blefaroplastika pre mužov" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Blefaroplastika pre mužov</div></div></a>
+      <a href="#" class="proc-grid-card"><img src="{{ base }}../fotky/web/work-op-2.jpg" loading="lazy" alt="Abdominoplastika pre mužov" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Abdominoplastika pre mužov</div></div></a>
+      <a href="#" class="proc-grid-card"><img src="{{ base }}../fotky/web/work-studio.jpg" loading="lazy" alt="Korekcia uší pre mužov" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Korekcia uší pre mužov</div></div></a>
     </div>
+
+    <!-- Before / After (shown on click) -->
+    <div class="ba-section ba-locked">
+      <h2 class="section-title">{{ ba_title }}</h2>
+      <p class="ba-note">{{ ba_sensitive }} {{ ba_note }}</p>
+      <div class="ba-locked-actions">
+        <button type="button" class="btn btn-outline-gold js-ba-open js-ba-open" data-title="{{ spec4_title }}" data-images="{{ base }}../fotky/web/ba-muz-1.jpg,{{ base }}../fotky/web/ba-muz-2.jpg">{{ ba_show }}</button>
+      </div>
+    </div>
+
     <div style="text-align:center; margin-top:50px;"><a href="../../kontakt/index.html" class="btn btn-primary js-book-consultation">Prajem si konzultáciu</a></div>
   </div>
 </section>

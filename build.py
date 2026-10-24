@@ -29,6 +29,13 @@ SRC = ROOT / '_src'
 I18N = SRC / '_i18n'
 
 LANGUAGES = ['sk', 'en', 'de']
+
+# Pages kept in _src/ but not built/published yet (placeholder content only).
+# Remove a path from this set to publish the page again.
+SKIP_PAGES = {
+    'bb-v-mediach/index.html',
+    'zakroky/krajsia-tvar/rhinoplastika/index.html',
+}
 DEFAULT_LANG = 'sk'
 
 INCLUDE_RE = re.compile(r'\{%\s*include\s+"([^"]+)"((?:\s+\w+="[^"]*")*)\s*%\}')
@@ -143,6 +150,8 @@ def build_all() -> int:
         translations = load_translations(lang)
         for src_file in sorted(SRC.rglob('*.html')):
             if '_partials' in src_file.parts:
+                continue
+            if src_file.relative_to(SRC).as_posix() in SKIP_PAGES:
                 continue
             out = build_page(src_file, lang, translations)
             print(f"  ✓ {out.relative_to(ROOT)}")

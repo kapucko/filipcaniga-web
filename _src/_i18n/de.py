@@ -65,8 +65,18 @@ T = {
     'intro_p3': 'Qualität ist mir wichtig, deshalb bilde ich mich kontinuierlich weiter — ich nehme regelmäßig an internationalen Kongressen und Masterclass-Workshops teil, unter anderem in Marbella und Düsseldorf. Ich spreche fließend Englisch und Deutsch.',
     'intro_badge_years': 'Jahre im Fach',
 
-    'celebs_title': 'Patienten, die mir vertrauen',
-    'celebs_subtitle': 'Langjährige Zusammenarbeit mit zufriedenen Klienten aus der Slowakei und dem Ausland.',
+    'spec_title': 'Meine Spezialisierungen',
+    'spec_subtitle': 'Die Eingriffe, die ich am häufigsten durchführe und in denen ich die meiste Erfahrung habe.',
+    'spec1_title': 'Brustvergrößerung',
+    'spec1_text': 'Brustvergrößerung einschließlich der Preservé™-Methode, die auf ein schonendes Vorgehen und ein natürliches Ergebnis setzt. Größe und Form des Implantats wählen wir gemeinsam passend zu Ihren Proportionen.',
+    'spec2_title': 'Bruststraffung & Brustformung',
+    'spec2_text': 'Mastopexie mit oder ohne Implantat – für eine straffere Form, bessere Symmetrie und ein natürlich wirkendes Dekolleté.',
+    'spec3_title': 'Liposuktion & HD-Liposuktion',
+    'spec3_text': 'Entfernung lokaler Fettdepots und feine Konturierung der Silhouette – von der 360°-Liposuktion der Oberschenkel bis zur HD-Liposuktion des Bauches.',
+    'spec4_title': 'Gynäkomastie',
+    'spec4_text': 'Korrektur der vergrößerten männlichen Brust – Entfernung von überschüssigem Drüsen- und Fettgewebe für eine flachere, männlichere Brust.',
+    'ba_show': 'Vorher & nachher anzeigen',
+    'ba_sensitive': 'Die Vorher-Nachher-Fotos zeigen den unbekleideten Körper und werden daher erst nach einem Klick angezeigt.',
 
     'procedures_title': 'Eingriffe',
     'procedures_subtitle': 'Ich biete eine breite Palette ästhetischer und rekonstruktiver Eingriffe, die auf Ihre Bedürfnisse zugeschnitten sind.',
@@ -74,9 +84,6 @@ T = {
     'proc_breast_text': 'Vergrößerung, Verkleinerung, Straffung und Rekonstruktion der Brust mit Fokus auf ein natürliches Ergebnis.',
     'proc_body_text': 'Liposuktion, Abdominoplastik, Körpermodellierung und weitere Eingriffe am Körper.',
     'proc_men_text': 'Eingriffe speziell für Männer — Gynäkomastie, Modellierung, Liposuktion.',
-
-    'testimonials_title': 'Patientenbewertungen',
-    'testimonials_subtitle': 'Die Zufriedenheit meiner Patienten steht an erster Stelle. Lesen Sie ihre Geschichten.',
 
     'cta_title': 'Schöner, jünger, glücklicher',
     'cta_subtitle': 'Vereinbaren Sie ein unverbindliches Beratungsgespräch und gemeinsam finden wir die beste Lösung für Sie.',
@@ -177,4 +184,11 @@ T = {
     'clinic_label_hours': 'Öffnungszeiten',
     'clinic_label_parking': 'Parken',
     'clinic_btn_book': 'Termin buchen',
+
+    # ===== Before / after gallery =====
+    'ba_title': 'Vorher-Nachher-Ergebnisse',
+    'ba_note': 'Echte Ergebnisse meiner Patientinnen und Patienten. Die Ergebnisse sind individuell und hängen vom jeweiligen Patienten ab.',
+    'ba_before': 'Vorher',
+    'ba_after': 'Nachher',
+    'ba_alt': 'Vorher und nachher',
 }

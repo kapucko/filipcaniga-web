@@ -2,7 +2,7 @@
 
 {% include "_partials/header.html" active_zakroky=" active" %}
 
-<section class="page-hero" style="background-image: url('https://picsum.photos/1920/600?random=63');">
+<section class="page-hero" style="background-image: url('{{ base }}../fotky/web/hero-prsia.jpg');">
   <div class="container">
     <div class="page-hero-content">
       <h1 class="page-hero-title">{{ prsia_hero_title }}</h1>
@@ -23,34 +23,44 @@
 
     <div class="section-header">
       <h2 class="section-title">Zákroky pre krajšie prsia</h2>
-      <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Každý pacient je jedinečný a pristupujem ku každému individuálne s ohľadom na jeho priania a anatomické predpoklady.</p>
+      <p class="section-subtitle">Cieľom je prirodzený výsledok, ktorý zapadá do proporcií Vášho tela. Každý pacient je jedinečný a pristupujem ku každému individuálne s ohľadom na jeho priania a anatomické predpoklady.</p>
     </div>
 
     <div class="grid-4" style="grid-template-columns: repeat(3, 1fr);">
       <a href="#" class="proc-grid-card">
-        <img src="https://picsum.photos/600/300?random=121" alt="Augmentácia prsníkov" />
+        <img src="{{ base }}../fotky/web/work-op-2.jpg" loading="lazy" alt="Augmentácia prsníkov" />
         <div class="proc-grid-card-body"><div class="proc-grid-card-title">Augmentácia prsníkov</div></div>
       </a>
       <a href="#" class="proc-grid-card">
-        <img src="https://picsum.photos/600/300?random=122" alt="Redukcia prsníkov" />
+        <img src="{{ base }}../fotky/web/work-op-4.jpg" loading="lazy" alt="Redukcia prsníkov" />
         <div class="proc-grid-card-body"><div class="proc-grid-card-title">Redukcia prsníkov</div></div>
       </a>
       <a href="#" class="proc-grid-card">
-        <img src="https://picsum.photos/600/300?random=123" alt="Lifting prsníkov" />
+        <img src="{{ base }}../fotky/web/work-clinic.jpg" loading="lazy" alt="Lifting prsníkov" />
         <div class="proc-grid-card-body"><div class="proc-grid-card-title">Lifting prsníkov (mastopexa)</div></div>
       </a>
       <a href="#" class="proc-grid-card">
-        <img src="https://picsum.photos/600/300?random=124" alt="Rekonštrukcia prsníkov" />
+        <img src="{{ base }}../fotky/web/work-op-1.jpg" loading="lazy" alt="Rekonštrukcia prsníkov" />
         <div class="proc-grid-card-body"><div class="proc-grid-card-title">Rekonštrukcia prsníkov</div></div>
       </a>
       <a href="#" class="proc-grid-card">
-        <img src="https://picsum.photos/600/300?random=125" alt="Výmena implantátov" />
+        <img src="{{ base }}../fotky/web/work-op-3.jpg" loading="lazy" alt="Výmena implantátov" />
         <div class="proc-grid-card-body"><div class="proc-grid-card-title">Výmena implantátov</div></div>
       </a>
       <a href="#" class="proc-grid-card">
-        <img src="https://picsum.photos/600/300?random=126" alt="Korekcia bradaviek" />
+        <img src="{{ base }}../fotky/web/work-coat.jpg" loading="lazy" alt="Korekcia bradaviek" />
         <div class="proc-grid-card-body"><div class="proc-grid-card-title">Korekcia bradaviek</div></div>
       </a>
+    </div>
+
+    <!-- Before / After (shown on click) -->
+    <div class="ba-section ba-locked">
+      <h2 class="section-title">{{ ba_title }}</h2>
+      <p class="ba-note">{{ ba_sensitive }} {{ ba_note }}</p>
+      <div class="ba-locked-actions">
+        <button type="button" class="btn btn-outline-gold js-ba-open js-ba-open" data-title="{{ spec1_title }}" data-images="{{ base }}../fotky/web/ba-prsia-1.jpg,{{ base }}../fotky/web/ba-prsia-3.jpg,{{ base }}../fotky/web/ba-prsia-4.jpg,{{ base }}../fotky/web/ba-prsia-7.jpg,{{ base }}../fotky/web/ba-prsia-asym-pred.jpg,{{ base }}../fotky/web/ba-prsia-asym-po.jpg">{{ ba_show }}: {{ spec1_title }}</button>
+        <button type="button" class="btn btn-outline-gold js-ba-open js-ba-open" data-title="{{ spec2_title }}" data-images="{{ base }}../fotky/web/ba-prsia-5.jpg,{{ base }}../fotky/web/ba-prsia-6.jpg,{{ base }}../fotky/web/ba-prsia-8.jpg">{{ ba_show }}: {{ spec2_title }}</button>
+      </div>
     </div>
 
     <div style="text-align:center; margin-top:50px;">

@@ -65,8 +65,18 @@ T = {
     'intro_p3': 'Quality is essential to me, so I keep learning continuously — attending international congresses and masterclass workshops, including in Marbella and Düsseldorf. I speak fluent English and German.',
     'intro_badge_years': 'years in the field',
 
-    'celebs_title': 'Patients who trust me',
-    'celebs_subtitle': 'Long-standing collaborations with satisfied clients from Slovakia and abroad.',
+    'spec_title': 'My specializations',
+    'spec_subtitle': 'The procedures I perform most often and have the most experience with.',
+    'spec1_title': 'Breast augmentation',
+    'spec1_text': 'Breast enlargement including the Preservé™ method, which focuses on a gentle approach and a natural result. We choose the implant size and shape together to match your proportions.',
+    'spec2_title': 'Breast lift & reshaping',
+    'spec2_text': 'Mastopexy with or without implants, aiming for a firmer shape, better symmetry and a natural-looking décolleté.',
+    'spec3_title': 'Liposuction & HD liposuction',
+    'spec3_text': 'Removal of localized fat deposits and fine body contouring — from 360° thigh liposuction to HD abdominal liposuction.',
+    'spec4_title': 'Gynecomastia',
+    'spec4_text': 'Correction of enlarged male breasts — removal of excess glandular and fatty tissue for a flatter, more masculine chest.',
+    'ba_show': 'Show before & after',
+    'ba_sensitive': 'Before and after photos show the uncovered body, so they are only displayed after a click.',
 
     'procedures_title': 'Procedures',
     'procedures_subtitle': 'I offer a wide range of aesthetic and reconstructive procedures tailored to your needs.',
@@ -74,9 +84,6 @@ T = {
     'proc_breast_text': 'Augmentation, reduction, lift, and reconstruction with focus on a natural result.',
     'proc_body_text': 'Liposuction, abdominoplasty, body contouring, and other body procedures.',
     'proc_men_text': 'Procedures designed specifically for men — gynecomastia, contouring, liposuction.',
-
-    'testimonials_title': 'Patient reviews',
-    'testimonials_subtitle': 'Patient satisfaction is my top priority. Read their stories.',
 
     'cta_title': 'Beautiful, younger, happier',
     'cta_subtitle': 'Book a no-obligation consultation and we’ll find the best solution together.',
@@ -177,4 +184,11 @@ T = {
     'clinic_label_hours': 'Opening hours',
     'clinic_label_parking': 'Parking',
     'clinic_btn_book': 'Book consultation',
+
+    # ===== Before / after gallery =====
+    'ba_title': 'Before & after results',
+    'ba_note': 'Real results of my patients. Results are individual and depend on each patient.',
+    'ba_before': 'Before',
+    'ba_after': 'After',
+    'ba_alt': 'Before and after',
 }

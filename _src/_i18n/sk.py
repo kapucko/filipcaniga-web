@@ -65,8 +65,18 @@ T = {
     'intro_p3': 'Kvalita je pre mňa kľúčová, preto sa neustále vzdelávam — pravidelne sa zúčastňujem medzinárodných kongresov a masterclass workshopov vrátane Marbelly a Düsseldorfu. Plynulo komunikujem v angličtine a nemčine.',
     'intro_badge_years': 'rokov v odbore',
 
-    'celebs_title': 'Pacienti, ktorí mi dôverujú',
-    'celebs_subtitle': 'Dlhoročná spolupráca so spokojnými klientmi z celého Slovenska a zahraničia.',
+    'spec_title': 'Moje špecializácie',
+    'spec_subtitle': 'Zákroky, ktorým sa venujem najčastejšie a v ktorých mám najviac skúseností.',
+    'spec1_title': 'Augmentácia prsníkov',
+    'spec1_text': 'Zväčšenie pŕs vrátane metódy Preservé™, ktorá kladie dôraz na šetrnosť a prirodzený výsledok. Veľkosť a tvar implantátu vyberáme spoločne podľa Vašich proporcií.',
+    'spec2_title': 'Lifting a modelácia prsníkov',
+    'spec2_text': 'Mastopexia s implantátom alebo bez neho. Cieľom je pevnejší tvar, vyváženejšia symetria a prirodzene pôsobiaci dekolt.',
+    'spec3_title': 'Liposukcia a HD liposukcia',
+    'spec3_text': 'Odstránenie lokálnych tukových zásob a jemné vymodelovanie siluety — od liposukcie 360° stehien až po HD liposukciu brucha.',
+    'spec4_title': 'Gynekomastia',
+    'spec4_text': 'Korekcia zväčšenej mužskej hrude — odstránenie prebytočného žľazového a tukového tkaniva pre plochší a mužnejší hrudník.',
+    'ba_show': 'Zobraziť pred a po',
+    'ba_sensitive': 'Fotografie pred a po zobrazujú odhalené telo, preto sa zobrazia až po kliknutí.',
 
     'procedures_title': 'Zákroky',
     'procedures_subtitle': 'Ponúkam širokú škálu estetických a rekonštrukčných procedúr prispôsobených Vašim potrebám.',
@@ -74,9 +84,6 @@ T = {
     'proc_breast_text': 'Augmentácia, redukcia, lifting a rekonštrukcia prsníkov s dôrazom na prirodzený výsledok.',
     'proc_body_text': 'Liposukcia, abdominoplastika, modelovanie siluety a ďalšie procedúry pre telo.',
     'proc_men_text': 'Zákroky špeciálne navrhnuté pre mužov — gynekomastia, modelovanie, liposukcia.',
-
-    'testimonials_title': 'Hodnotenia pacientov',
-    'testimonials_subtitle': 'Spokojnosť pacientov je pre mňa na prvom mieste. Prečítajte si ich príbehy.',
 
     'cta_title': 'Krásni, mladší, šťastnejší',
     'cta_subtitle': 'Dohodnite si nezáväznú konzultáciu a spoločne nájdeme najlepšie riešenie pre Vás.',
@@ -178,4 +185,11 @@ T = {
     'clinic_label_hours': 'Ordinačné hodiny',
     'clinic_label_parking': 'Parkovanie',
     'clinic_btn_book': 'Objednať konzultáciu',
+
+    # ===== Before / after gallery =====
+    'ba_title': 'Výsledky pred a po',
+    'ba_note': 'Skutočné výsledky mojich pacientov. Výsledky sú individuálne a závisia od konkrétneho pacienta.',
+    'ba_before': 'Pred',
+    'ba_after': 'Po',
+    'ba_alt': 'Pred a po zákroku',
 }

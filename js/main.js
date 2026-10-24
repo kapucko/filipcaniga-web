@@ -49,6 +49,44 @@ function fcInit() {
     });
   }
 
+  // Before/after gallery modal — images are only loaded after the click
+  var baModal = document.getElementById('ba-modal');
+  var lastFocusedBeforeBa = null;
+  function closeBaModal() {
+    if (!baModal || baModal.hasAttribute('hidden')) return;
+    baModal.setAttribute('hidden', '');
+    baModal.querySelector('.ba-modal-grid').innerHTML = '';
+    document.body.classList.remove('modal-open');
+    if (lastFocusedBeforeBa && lastFocusedBeforeBa.focus) lastFocusedBeforeBa.focus();
+  }
+  document.querySelectorAll('.js-ba-open').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (!baModal) return;
+      lastFocusedBeforeBa = btn;
+      var grid = baModal.querySelector('.ba-modal-grid');
+      grid.innerHTML = '';
+      baModal.querySelector('.modal-title').textContent = btn.getAttribute('data-title') || '';
+      (btn.getAttribute('data-images') || '').split(',').forEach(function (src) {
+        if (!src) return;
+        var img = document.createElement('img');
+        img.src = src;
+        img.alt = btn.getAttribute('data-title') || '';
+        grid.appendChild(img);
+      });
+      baModal.removeAttribute('hidden');
+      document.body.classList.add('modal-open');
+      baModal.querySelector('.modal-close').focus();
+    });
+  });
+  if (baModal) {
+    baModal.addEventListener('click', function (e) {
+      if (e.target.closest('[data-modal-close]')) closeBaModal();
+    });
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeBaModal();
+  });
+
   // Close on Escape
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && consultationModal && !consultationModal.hasAttribute('hidden')) {
@@ -104,7 +142,14 @@ function fcInit() {
 
     let current = 0;
     const total = items.length;
-    const max = Math.max(0, total - visibleCount);
+    function maxIndex() {
+      var n = visibleCount;
+      if (!n) {  // auto: how many items fit in the viewport
+        var w = items[0].offsetWidth + parseInt(getComputedStyle(track).gap || 0);
+        n = Math.max(1, Math.round((track.parentElement.clientWidth + parseInt(getComputedStyle(track).gap || 0)) / w));
+      }
+      return Math.max(0, total - n);
+    }
 
     function slide() {
       const itemWidth = items[0].offsetWidth + parseInt(getComputedStyle(track).gap || 0);
@@ -115,20 +160,21 @@ function fcInit() {
     const nextBtn = wrap.querySelector('.carousel-btn--next');
 
     if (prevBtn) prevBtn.addEventListener('click', function () {
-      current = current > 0 ? current - 1 : max;
+      current = current > 0 ? current - 1 : maxIndex();
       slide();
     });
 
     if (nextBtn) nextBtn.addEventListener('click', function () {
-      current = current < max ? current + 1 : 0;
+      current = current < maxIndex() ? current + 1 : 0;
       slide();
     });
 
-    window.addEventListener('resize', slide);
+    window.addEventListener('resize', function () {
+      current = Math.min(current, maxIndex());
+      slide();
+    });
   }
 
-  initCarousel('.celebrity-carousel', '.carousel-track', '.celebrity-card', 6);
-  initCarousel('.testimonial-carousel', '.testimonials-track', '.testimonial-card', 3);
 
   /* ── Accordion ───────────────────────────────────────────── */
   document.querySelectorAll('.accordion-trigger').forEach(function (btn) {

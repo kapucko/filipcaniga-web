@@ -64,26 +64,52 @@
   </div>
 </section>
 
-<!-- CELEBRITY CLIENTS -->
+<!-- SPECIALIZATIONS -->
 <section class="section section--gray">
   <div class="container">
     <div class="section-header section-header--center">
-      <h2 class="section-title">{{ celebs_title }}</h2>
-      <p class="section-subtitle">{{ celebs_subtitle }}</p>
+      <h2 class="section-title">{{ spec_title }}</h2>
+      <p class="section-subtitle">{{ spec_subtitle }}</p>
     </div>
-
-    <div class="celebrity-carousel" style="position:relative; padding: 0 30px;">
-      <div class="carousel-track">
-        <div class="celebrity-card"><img src="https://picsum.photos/300/400?random=11" alt="Klient 1" /><span>Martin K.</span></div>
-        <div class="celebrity-card"><img src="https://picsum.photos/300/400?random=12" alt="Klient 2" /><span>Jana P.</span></div>
-        <div class="celebrity-card"><img src="https://picsum.photos/300/400?random=13" alt="Klient 3" /><span>Lucia S.</span></div>
-        <div class="celebrity-card"><img src="https://picsum.photos/300/400?random=14" alt="Klient 4" /><span>Peter V.</span></div>
-        <div class="celebrity-card"><img src="https://picsum.photos/300/400?random=15" alt="Klient 5" /><span>Monika R.</span></div>
-        <div class="celebrity-card"><img src="https://picsum.photos/300/400?random=16" alt="Klient 6" /><span>Tomáš H.</span></div>
+    <div class="spec-grid">
+      <div class="spec-card fade-up">
+        <div class="spec-num">01</div>
+        <h3 class="spec-title">{{ spec1_title }}</h3>
+        <p class="spec-text">{{ spec1_text }}</p>
+        <div class="spec-actions">
+          <button type="button" class="btn btn-outline-gold btn-sm js-ba-open" data-title="{{ spec1_title }}" data-images="{{ base }}../fotky/web/ba-prsia-1.jpg,{{ base }}../fotky/web/ba-prsia-3.jpg,{{ base }}../fotky/web/ba-prsia-4.jpg,{{ base }}../fotky/web/ba-prsia-7.jpg,{{ base }}../fotky/web/ba-prsia-asym-pred.jpg,{{ base }}../fotky/web/ba-prsia-asym-po.jpg">{{ ba_show }}</button>
+          <a href="{{ base }}zakroky/krajsie-prsia/index.html" class="spec-link">{{ btn_learn_more }}</a>
+        </div>
       </div>
-      <button class="carousel-btn carousel-btn--prev" aria-label="Prev">&#8592;</button>
-      <button class="carousel-btn carousel-btn--next" aria-label="Next">&#8594;</button>
+      <div class="spec-card fade-up">
+        <div class="spec-num">02</div>
+        <h3 class="spec-title">{{ spec2_title }}</h3>
+        <p class="spec-text">{{ spec2_text }}</p>
+        <div class="spec-actions">
+          <button type="button" class="btn btn-outline-gold btn-sm js-ba-open" data-title="{{ spec2_title }}" data-images="{{ base }}../fotky/web/ba-prsia-5.jpg,{{ base }}../fotky/web/ba-prsia-6.jpg,{{ base }}../fotky/web/ba-prsia-8.jpg">{{ ba_show }}</button>
+          <a href="{{ base }}zakroky/krajsie-prsia/index.html" class="spec-link">{{ btn_learn_more }}</a>
+        </div>
+      </div>
+      <div class="spec-card fade-up">
+        <div class="spec-num">03</div>
+        <h3 class="spec-title">{{ spec3_title }}</h3>
+        <p class="spec-text">{{ spec3_text }}</p>
+        <div class="spec-actions">
+          <button type="button" class="btn btn-outline-gold btn-sm js-ba-open" data-title="{{ spec3_title }}" data-images="{{ base }}../fotky/web/ba-telo-1.jpg,{{ base }}../fotky/web/ba-telo-2.jpg,{{ base }}../fotky/web/ba-telo-3.jpg">{{ ba_show }}</button>
+          <a href="{{ base }}zakroky/krajsie-telo/index.html" class="spec-link">{{ btn_learn_more }}</a>
+        </div>
+      </div>
+      <div class="spec-card fade-up">
+        <div class="spec-num">04</div>
+        <h3 class="spec-title">{{ spec4_title }}</h3>
+        <p class="spec-text">{{ spec4_text }}</p>
+        <div class="spec-actions">
+          <button type="button" class="btn btn-outline-gold btn-sm js-ba-open" data-title="{{ spec4_title }}" data-images="{{ base }}../fotky/web/ba-muz-1.jpg,{{ base }}../fotky/web/ba-muz-2.jpg">{{ ba_show }}</button>
+          <a href="{{ base }}zakroky/atraktivnejsi-muz/index.html" class="spec-link">{{ btn_learn_more }}</a>
+        </div>
+      </div>
     </div>
+    <p class="spec-note">{{ ba_sensitive }}</p>
   </div>
 </section>
 
@@ -97,7 +123,7 @@
 
     <div class="grid-4">
       <a href="{{ base }}zakroky/krajsia-tvar/index.html" class="procedure-card">
-        <img src="https://picsum.photos/600/400?random=21" alt="{{ nav_zakroky_tvar }}" />
+        <img src="{{ base }}../fotky/web/proc-tvar.jpg" alt="{{ nav_zakroky_tvar }}" />
         <div class="procedure-card-body">
           <h3 class="procedure-card-title">{{ nav_zakroky_tvar }}</h3>
           <p class="procedure-card-text">{{ proc_face_text }}</p>
@@ -106,7 +132,7 @@
       </a>
 
       <a href="{{ base }}zakroky/krajsie-prsia/index.html" class="procedure-card">
-        <img src="https://picsum.photos/600/400?random=22" alt="{{ nav_zakroky_prsia }}" />
+        <img src="{{ base }}../fotky/web/proc-prsia.jpg" alt="{{ nav_zakroky_prsia }}" />
         <div class="procedure-card-body">
           <h3 class="procedure-card-title">{{ nav_zakroky_prsia }}</h3>
           <p class="procedure-card-text">{{ proc_breast_text }}</p>
@@ -115,7 +141,7 @@
       </a>
 
       <a href="{{ base }}zakroky/krajsie-telo/index.html" class="procedure-card">
-        <img src="https://picsum.photos/600/400?random=23" alt="{{ nav_zakroky_telo }}" />
+        <img src="{{ base }}../fotky/web/proc-telo.jpg" alt="{{ nav_zakroky_telo }}" />
         <div class="procedure-card-body">
           <h3 class="procedure-card-title">{{ nav_zakroky_telo }}</h3>
           <p class="procedure-card-text">{{ proc_body_text }}</p>
@@ -124,65 +150,13 @@
       </a>
 
       <a href="{{ base }}zakroky/atraktivnejsi-muz/index.html" class="procedure-card">
-        <img src="https://picsum.photos/600/400?random=24" alt="{{ nav_zakroky_muz }}" />
+        <img src="{{ base }}../fotky/web/proc-muz.jpg" alt="{{ nav_zakroky_muz }}" />
         <div class="procedure-card-body">
           <h3 class="procedure-card-title">{{ nav_zakroky_muz }}</h3>
           <p class="procedure-card-text">{{ proc_men_text }}</p>
           <span class="procedure-card-link">{{ btn_learn_more }}</span>
         </div>
       </a>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="section section--gray">
-  <div class="container">
-    <div class="section-header section-header--center">
-      <h2 class="section-title">{{ testimonials_title }}</h2>
-      <p class="section-subtitle">{{ testimonials_subtitle }}</p>
-    </div>
-
-    <div class="testimonial-carousel" style="position:relative; padding: 0 30px;">
-      <div class="testimonials-track">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue."</p>
-          <div class="testimonial-author">
-            <img src="https://picsum.photos/100/100?random=31" alt="Anna B." />
-            <div>
-              <div class="testimonial-author-name">Anna B.</div>
-              <div class="testimonial-author-info">Bratislava, 2024</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Proin vel purus vel ante aliquet laoreet a vel nibh. Vestibulum ante ipsum primis in faucibus orci luctus."</p>
-          <div class="testimonial-author">
-            <img src="https://picsum.photos/100/100?random=32" alt="Marek T." />
-            <div>
-              <div class="testimonial-author-name">Marek T.</div>
-              <div class="testimonial-author-info">Košice, 2024</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit."</p>
-          <div class="testimonial-author">
-            <img src="https://picsum.photos/100/100?random=33" alt="Zuzana K." />
-            <div>
-              <div class="testimonial-author-name">Zuzana K.</div>
-              <div class="testimonial-author-info">Žilina, 2023</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-btn carousel-btn--prev" aria-label="Prev">&#8592;</button>
-      <button class="carousel-btn carousel-btn--next" aria-label="Next">&#8594;</button>
     </div>
   </div>
 </section>
