@@ -180,17 +180,8 @@ ul { list-style: none; }
 }
 
 .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.logo-mark {
-  width: 46px; height: 46px;
-  background: var(--navy); color: var(--gold);
-  font-size: 1.05rem; font-weight: 800;
-  font-family: 'Playfair Display', Georgia, serif;
-  border-radius: var(--radius);
-  display: flex; align-items: center; justify-content: center;
-  letter-spacing: -0.5px; flex-shrink: 0;
-}
 .logo-text { display: flex; flex-direction: column; line-height: 1.2; }
-.logo-name { font-size: 0.967rem; font-weight: 700; color: var(--navy); letter-spacing: -0.02em; }
+.logo-name { font-family: 'Playfair Display', Georgia, serif; font-size: 1.2rem; font-weight: 700; color: var(--navy); letter-spacing: -0.01em; }
 .logo-title { font-size: 0.7rem; color: var(--muted); font-weight: 400; letter-spacing: 0.3px; }
 
 .primary-nav { display: flex; align-items: center; gap: 2px; }
@@ -555,11 +546,6 @@ ul { list-style: none; }
    ============================================================ */
 .site-footer { background: var(--navy-deep); color: rgba(255,255,255,0.7); padding: 26px 0; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 44px; margin-bottom: 44px; }
-.footer-logo-wrap { margin-bottom: 18px; }
-.footer-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.footer-logo .logo-mark { background: rgba(255,255,255,0.08); color: var(--gold); }
-.footer-logo .logo-name { color: var(--white); }
-.footer-logo .logo-title { color: rgba(255,255,255,0.45); }
 .footer-desc { font-size: 0.833rem; line-height: 1.75; color: rgba(255,255,255,0.5); margin-top: 14px; }
 .footer-col-title {
   font-size: 0.73rem; font-weight: 700; text-transform: uppercase;
@@ -899,7 +885,8 @@ ul { list-style: none; }
   .celebrity-card { flex: 0 0 100%; }
   .cta-banner { padding: 48px 0; }
   .footer-bottom { flex-direction: column; text-align: center; }
-  .logo-text { display: none; }
+  .logo-name { font-size: 1.05rem; }
+  .logo-title { display: none; }
   .stat-number { font-size: 2rem; }
 }
 
