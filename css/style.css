@@ -229,17 +229,33 @@ ul { list-style: none; }
 }
 .instagram-link:hover { color: #E1306C; }
 
-.lang-switcher {
-  display: flex; gap: 2px; align-items: center;
-  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.5px;
+.lang-switcher { position: relative; }
+.lang-current {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--white);
+  font: 600 0.78rem/1 'Inter', sans-serif; letter-spacing: 0.5px; color: var(--navy); cursor: pointer;
+  transition: border-color var(--transition), color var(--transition);
 }
+.lang-current:hover, .lang-switcher.open .lang-current { border-color: var(--gold); color: var(--gold); }
+.lang-globe { font-size: 0.95rem; }
+.lang-caret { transition: transform var(--transition); }
+.lang-switcher.open .lang-caret { transform: rotate(180deg); }
+.lang-menu {
+  position: absolute; right: 0; top: calc(100% + 8px); z-index: 200; min-width: 180px;
+  list-style: none; margin: 0; padding: 6px; background: var(--white);
+  border: 1px solid var(--border); border-radius: 8px; box-shadow: var(--shadow-md);
+  opacity: 0; visibility: hidden; transform: translateY(-4px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+}
+.lang-switcher.open .lang-menu { opacity: 1; visibility: visible; transform: none; }
 .lang-link {
-  color: var(--muted); text-decoration: none;
-  padding: 6px 8px; border-radius: 4px;
-  transition: color var(--transition), background var(--transition);
+  display: flex; align-items: center; gap: 12px; padding: 9px 12px; border-radius: 5px;
+  font-size: 0.85rem; color: var(--navy); text-decoration: none; white-space: nowrap;
 }
-.lang-link:hover { color: var(--navy); background: var(--gold-pale); }
-.lang-link.active { color: var(--gold); background: var(--gold-pale); }
+.lang-link:hover { background: var(--gold-pale); color: var(--navy); text-decoration: none; }
+.lang-code { width: 22px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.5px; color: var(--muted); }
+.lang-link.active { color: var(--gold); font-weight: 600; }
+.lang-link.active .lang-code { color: var(--gold); }
 
 .hamburger {
   display: none; flex-direction: column; gap: 5px;

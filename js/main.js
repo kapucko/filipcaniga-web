@@ -4,6 +4,26 @@
 
 function fcInit() {
 
+  /* ── Language dropdown ───────────────────────────────────── */
+  document.querySelectorAll('.lang-switcher').forEach(function (sw) {
+    var btn = sw.querySelector('.lang-current');
+    if (!btn) return;
+    function setOpen(open) {
+      sw.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      setOpen(!sw.classList.contains('open'));
+    });
+    document.addEventListener('click', function (e) {
+      if (!sw.contains(e.target)) setOpen(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && sw.classList.contains('open')) { setOpen(false); btn.focus(); }
+    });
+  });
+
   /* ── Remember chosen language (used by root redirect) ────── */
   document.querySelectorAll('.lang-link[data-lang]').forEach(function (a) {
     a.addEventListener('click', function () {

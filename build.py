@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parent
 SRC = ROOT / '_src'
 I18N = SRC / '_i18n'
 
-LANGUAGES = ['sk', 'en', 'de']
+LANGUAGES = ['sk', 'en', 'de', 'uk']
 
 # Pages kept in _src/ but not built/published yet (placeholder content only).
 # Remove a path from this set to publish the page again.
@@ -137,7 +137,7 @@ def build_root_redirect():
 </script>
 </head>
 <body>
-<p>Redirecting… <a href="./{DEFAULT_LANG}/">Slovensky</a> · <a href="./en/">English</a> · <a href="./de/">Deutsch</a></p>
+<p>Redirecting… <a href="./{DEFAULT_LANG}/">Slovensky</a> · <a href="./en/">English</a> · <a href="./de/">Deutsch</a> · <a href="./uk/">Українська</a></p>
 </body>
 </html>
 '''
