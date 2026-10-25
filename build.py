@@ -34,7 +34,6 @@ LANGUAGES = ['sk', 'en', 'de', 'uk']
 # Remove a path from this set to publish the page again.
 SKIP_PAGES = {
     'bb-v-mediach/index.html',
-    'zakroky/krajsia-tvar/rhinoplastika/index.html',
 }
 DEFAULT_LANG = 'sk'
 

@@ -1,0 +1,67 @@
+{% include "_partials/head.html" title="{{ sp_he_title }} — {{ doctor_full_name }}" description="{{ sp_he_text }}" %}
+
+{% include "_partials/header.html" active_zakroky=" active" %}
+
+<section class="page-hero" style="--hero-img: url('{{ base }}../fotky/web/hero-helium.jpg');">
+  <div class="container">
+    <div class="page-hero-content">
+      <h1 class="page-hero-title">{{ sp_he_nav }}</h1>
+      <p class="page-hero-subtitle">{{ sp_he_hero }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ base }}index.html">{{ nav_home }}</a><span>›</span><em>{{ nav_zakroky }}</em><span>›</span><em>{{ sp_he_nav }}</em>
+    </nav>
+
+    <div class="cat-intro">
+      <div class="cat-intro-text">
+        <h2 class="section-title">{{ sp_he_title }}</h2>
+        <p class="cat-lead">{{ sp_he_text }}</p>
+        <p>{{ cat_approach }}</p>
+        <div class="cat-intro-actions">
+          <a href="{{ base }}kontakt/index.html" class="btn btn-primary js-book-consultation">{{ btn_consultation }}</a>
+        </div>
+      </div>
+      <div class="cat-intro-photo">
+        <img src="{{ base }}../fotky/web/spec-helium.jpg" alt="MUDr. Filip Čaniga" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--gray">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <h2 class="section-title">{{ cat_procs_title }}</h2>
+      <p class="section-subtitle">{{ cat_procs_subtitle }}</p>
+    </div>
+    <div class="proc-list">
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ sp_he_p1_t }}</h3>
+        <p class="proc-item-text">{{ sp_he_p1_d }}</p>
+      </div>
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ sp_he_p2_t }}</h3>
+        <p class="proc-item-text">{{ sp_he_p2_d }}</p>
+      </div>
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ sp_he_p3_t }}</h3>
+        <p class="proc-item-text">{{ sp_he_p3_d }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2 class="section-title">{{ cat_cta_title }}</h2>
+    <p class="section-subtitle">{{ cat_cta_text }}</p>
+    <a href="{{ base }}kontakt/index.html" class="btn btn-white js-book-consultation">{{ btn_consultation }}</a>
+  </div>
+</section>
+
+{% include "_partials/footer.html" %}

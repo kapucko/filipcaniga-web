@@ -1,0 +1,80 @@
+{% include "_partials/head.html" title="{{ sp_ul_title }} — {{ doctor_full_name }}" description="{{ sp_ul_text }}" %}
+
+{% include "_partials/header.html" active_zakroky=" active" %}
+
+<section class="page-hero" style="--hero-img: url('{{ base }}../fotky/web/hero-vaser.jpg');">
+  <div class="container">
+    <div class="page-hero-content">
+      <h1 class="page-hero-title">{{ sp_ul_nav }}</h1>
+      <p class="page-hero-subtitle">{{ sp_ul_hero }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ base }}index.html">{{ nav_home }}</a><span>›</span><em>{{ nav_zakroky }}</em><span>›</span><em>{{ sp_ul_nav }}</em>
+    </nav>
+
+    <div class="cat-intro">
+      <div class="cat-intro-text">
+        <h2 class="section-title">{{ sp_ul_title }}</h2>
+        <p class="cat-lead">{{ sp_ul_text }}</p>
+        <p>{{ cat_approach }}</p>
+        <div class="cat-intro-actions">
+          <a href="{{ base }}kontakt/index.html" class="btn btn-primary js-book-consultation">{{ btn_consultation }}</a>
+        </div>
+      </div>
+      <div class="cat-intro-photo">
+        <img src="{{ base }}../fotky/web/spec-vaser.jpg" alt="MUDr. Filip Čaniga" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--gray">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <h2 class="section-title">{{ cat_procs_title }}</h2>
+      <p class="section-subtitle">{{ cat_procs_subtitle }}</p>
+    </div>
+    <div class="proc-list">
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ sp_ul_p1_t }}</h3>
+        <p class="proc-item-text">{{ sp_ul_p1_d }}</p>
+      </div>
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ sp_ul_p2_t }}</h3>
+        <p class="proc-item-text">{{ sp_ul_p2_d }}</p>
+      </div>
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ sp_ul_p3_t }}</h3>
+        <p class="proc-item-text">{{ sp_ul_p3_d }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Before / After (shown on click) -->
+<section class="section">
+  <div class="container">
+    <div class="ba-locked">
+      <h2 class="section-title">{{ ba_title }}</h2>
+      <p class="ba-note">{{ ba_sensitive }} {{ ba_note }}</p>
+      <div class="ba-locked-actions">
+        <button type="button" class="btn btn-outline-gold js-ba-open" data-title="{{ sp_ul_title }}" data-images="{{ base }}../fotky/web/ba-telo-1.jpg,{{ base }}../fotky/web/ba-telo-2.jpg">{{ ba_show }}</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2 class="section-title">{{ cat_cta_title }}</h2>
+    <p class="section-subtitle">{{ cat_cta_text }}</p>
+    <a href="{{ base }}kontakt/index.html" class="btn btn-white js-book-consultation">{{ btn_consultation }}</a>
+  </div>
+</section>
+
+{% include "_partials/footer.html" %}

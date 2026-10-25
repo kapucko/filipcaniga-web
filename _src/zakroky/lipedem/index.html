@@ -1,12 +1,12 @@
-{% include "_partials/head.html" title="{{ nav_zakroky_tvar }} — MUDr. Filip Čaniga" description="{{ cat_tvar_text }}" %}
+{% include "_partials/head.html" title="{{ sp_lp_title }} — {{ doctor_full_name }}" description="{{ sp_lp_text }}" %}
 
 {% include "_partials/header.html" active_zakroky=" active" %}
 
-<section class="page-hero" style="--hero-img: url('{{ base }}../fotky/web/hero-tvar.jpg');">
+<section class="page-hero" style="--hero-img: url('{{ base }}../fotky/web/hero-lipedem.jpg');">
   <div class="container">
     <div class="page-hero-content">
-      <h1 class="page-hero-title">{{ nav_zakroky_tvar }}</h1>
-      <p class="page-hero-subtitle">{{ cat_tvar_hero_sub }}</p>
+      <h1 class="page-hero-title">{{ sp_lp_nav }}</h1>
+      <p class="page-hero-subtitle">{{ sp_lp_hero }}</p>
     </div>
   </div>
 </section>
@@ -14,20 +14,20 @@
 <section class="section">
   <div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="{{ base }}index.html">{{ nav_home }}</a><span>›</span><em>{{ nav_zakroky }}</em><span>›</span><em>{{ nav_zakroky_tvar }}</em>
+      <a href="{{ base }}index.html">{{ nav_home }}</a><span>›</span><em>{{ nav_zakroky }}</em><span>›</span><em>{{ sp_lp_nav }}</em>
     </nav>
 
     <div class="cat-intro">
       <div class="cat-intro-text">
-        <h2 class="section-title">{{ cat_tvar_title }}</h2>
-        <p class="cat-lead">{{ cat_tvar_text }}</p>
+        <h2 class="section-title">{{ sp_lp_title }}</h2>
+        <p class="cat-lead">{{ sp_lp_text }}</p>
         <p>{{ cat_approach }}</p>
         <div class="cat-intro-actions">
           <a href="{{ base }}kontakt/index.html" class="btn btn-primary js-book-consultation">{{ btn_consultation }}</a>
         </div>
       </div>
       <div class="cat-intro-photo">
-        <img src="{{ base }}../fotky/web/spec-tvar.jpg" alt="MUDr. Filip Čaniga" />
+        <img src="{{ base }}../fotky/web/spec-lipedem.jpg" alt="MUDr. Filip Čaniga" />
       </div>
     </div>
   </div>
@@ -39,22 +39,18 @@
       <h2 class="section-title">{{ cat_procs_title }}</h2>
       <p class="section-subtitle">{{ cat_procs_subtitle }}</p>
     </div>
-    <div class="proc-list proc-list--two">
+    <div class="proc-list">
       <div class="proc-item fade-up">
-        <h3 class="proc-item-title">{{ cat_tvar_p1_t }}</h3>
-        <p class="proc-item-text">{{ cat_tvar_p1_d }}</p>
+        <h3 class="proc-item-title">{{ sp_lp_p1_t }}</h3>
+        <p class="proc-item-text">{{ sp_lp_p1_d }}</p>
       </div>
       <div class="proc-item fade-up">
-        <h3 class="proc-item-title">{{ cat_tvar_p2_t }}</h3>
-        <p class="proc-item-text">{{ cat_tvar_p2_d }}</p>
+        <h3 class="proc-item-title">{{ sp_lp_p2_t }}</h3>
+        <p class="proc-item-text">{{ sp_lp_p2_d }}</p>
       </div>
       <div class="proc-item fade-up">
-        <h3 class="proc-item-title">{{ cat_tvar_p3_t }}</h3>
-        <p class="proc-item-text">{{ cat_tvar_p3_d }}</p>
-      </div>
-      <div class="proc-item fade-up">
-        <h3 class="proc-item-title">{{ cat_tvar_p4_t }}</h3>
-        <p class="proc-item-text">{{ cat_tvar_p4_d }}</p>
+        <h3 class="proc-item-title">{{ sp_lp_p3_t }}</h3>
+        <p class="proc-item-text">{{ sp_lp_p3_d }}</p>
       </div>
     </div>
   </div>
