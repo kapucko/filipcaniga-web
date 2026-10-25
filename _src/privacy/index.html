@@ -1,60 +1,11 @@
-{% include "_partials/head.html" title="Ochrana osobných údajov — MUDr. Filip Čaniga" description="" %}
+{% include "_partials/head.html" title="{{ privacy_hero_title }} — {{ doctor_full_name }}" description="{{ privacy_hero_title }} — {{ doctor_full_name }}" %}
 
 {% include "_partials/header.html" %}
 
 <div class="container">
   <div class="policy-content">
-    <h1 style="font-size:2rem; font-weight:800; color:#3a3a3a; margin-bottom:8px;">{{ privacy_hero_title }}</h1>
-    <p style="color:#4B4F58; font-size:0.867rem; margin-bottom:32px;">Posledná aktualizácia: január 2024</p>
-
-    <h2>1. Prevádzkovateľ osobných údajov</h2>
-    <p>Prevádzkovateľom osobných údajov je MUDr. Filip Čaniga, ordinujúci na klinikách:</p>
-    <ul>
-      <li>{{ clinic_bratislava_flag }} <strong>{{ clinic_bratislava_name }}</strong>, {{ clinic_bratislava_address_inline }} — <a href="{{ clinic_bratislava_phone_link }}">{{ clinic_bratislava_phone }}</a></li>
-      <li>{{ clinic_prague_flag }} <strong>{{ clinic_prague_name }}</strong>, {{ clinic_prague_address_inline }} — <a href="{{ clinic_prague_phone_link }}">{{ clinic_prague_phone }}</a></li>
-    </ul>
-
-    <h2>2. Účel spracovania osobných údajov</h2>
-    <p>Osobné údaje spracúvame na nasledovné účely:</p>
-    <ul>
-      <li>Vybavovanie dopytov a žiadostí o konzultáciu zaslaných prostredníctvom kontaktného formulára</li>
-      <li>Vedenie zdravotnej dokumentácie v súlade so zákonom o zdravotnej starostlivosti</li>
-      <li>Fakturácia a plnenie zákonných povinností</li>
-      <li>Zasielanie informačných materiálov (len so súhlasom)</li>
-    </ul>
-
-    <h2>3. Právny základ spracovania</h2>
-    <p>Spracúvanie osobných údajov je nevyhnutné na plnenie zmluvy (poskytnutie zdravotnej starostlivosti), splnenie zákonnej povinnosti, ochranu životne dôležitých záujmov alebo na základe Vášho súhlasu.</p>
-
-    <h2>4. Kategórie osobných údajov</h2>
-    <p>Spracúvame nasledovné kategórie osobných údajov:</p>
-    <ul>
-      <li>Identifikačné údaje (meno, priezvisko, dátum narodenia)</li>
-      <li>Kontaktné údaje (adresa, e-mail, telefónne číslo)</li>
-      <li>Zdravotné údaje (anamnéza, diagnózy, záznamy zo zákrokov)</li>
-      <li>Platobné údaje (v rozsahu potrebnom pre fakturáciu)</li>
-    </ul>
-
-    <h2>5. Príjemcovia osobných údajov</h2>
-    <p>Vaše osobné údaje môžu byť poskytnuté:</p>
-    <ul>
-      <li>Zdravotníckym zariadeniam v súvislosti s poskytovaním zdravotnej starostlivosti</li>
-      <li>Štátnym orgánom na základe zákonnej povinnosti</li>
-      <li>Poskytovateľom IT služieb (správa webstránky, hosting)</li>
-    </ul>
-
-    <h2>6. Doba uchovávania osobných údajov</h2>
-    <p>Osobné údaje uchovávame po dobu nevyhnutnú na splnenie účelu, na ktorý boli zhromaždené, a v súlade so zákonnou povinnosťou (zdravotná dokumentácia minimálne 20 rokov).</p>
-
-    <h2>7. Vaše práva</h2>
-    <p>Máte právo na prístup k Vašim osobným údajom, ich opravu, vymazanie, obmedzenie spracovania, prenosnosť a námietku proti spracovaniu. V prípade otázok nás kontaktujte priamo na klinike, kde Vás ošetrujem.</p>
-
-    <h2>8. Cookies</h2>
-    <p>Informácie o používaní cookies nájdete v <a href="../cookies/index.html">zásadách cookies</a>.</p>
-
-    <h2>9. Kontakt na dozorný orgán</h2>
-    <p>Ak sa domnievate, že spracúvanie Vašich osobných údajov porušuje nariadenie GDPR, máte právo podať sťažnosť na Úrad na ochranu osobných údajov SR, Hraničná 12, 820 07 Bratislava.</p>
-  </div>
+    <h1 class="policy-title">{{ privacy_hero_title }}</h1>
+{% include "_content/{{ lang }}/privacy.html" %}  </div>
 </div>
 
 {% include "_partials/footer.html" %}

@@ -1,45 +1,79 @@
-{% include "_partials/head.html" title="Atraktívnejší muž — MUDr. Filip Čaniga" description="Zákroky špeciálne pre mužov — gynekomastia, liposukcia, modelovanie postavy." %}
+{% include "_partials/head.html" title="{{ nav_zakroky_muz }} — MUDr. Filip Čaniga" description="{{ cat_muz_text }}" %}
 
 {% include "_partials/header.html" active_zakroky=" active" %}
 
-<section class="page-hero" style="background-image: url('{{ base }}../fotky/web/hero-muz.jpg');">
+<section class="page-hero" style="--hero-img: url('{{ base }}../fotky/web/hero-muz.jpg');">
   <div class="container">
     <div class="page-hero-content">
-      <h1 class="page-hero-title">{{ muz_hero_title }}</h1>
-      <p class="page-hero-subtitle">Špeciálne zákroky navrhnuté pre mužov</p>
+      <h1 class="page-hero-title">{{ nav_zakroky_muz }}</h1>
+      <p class="page-hero-subtitle">{{ cat_muz_hero_sub }}</p>
     </div>
   </div>
 </section>
+
 <section class="section">
   <div class="container">
-    <nav class="breadcrumb"><a href="../../index.html">Domov</a><span>›</span><span>Zákroky</span><span>›</span><span>Atraktívnejší muž</span></nav>
-    <div class="section-header">
-      <h2 class="section-title">Zákroky pre atraktívnejšieho muža</h2>
-      <p class="section-subtitle">Záujem mužov o estetickú chirurgiu rastie. Ponúkam zákroky špeciálne prispôsobené mužskej anatómii a estetickým ideálom pre prirodzený a mužný výsledok.</p>
-    </div>
-    <div class="grid-4" style="grid-template-columns: repeat(3, 1fr);">
-      <div class="proc-grid-card"><img src="{{ base }}../fotky/web/work-scrubs.jpg" loading="lazy" alt="Gynekomastia" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Gynekomastia</div></div></div>
-      <div class="proc-grid-card"><img src="{{ base }}../fotky/web/work-vaser.jpg" loading="lazy" alt="Liposukcia VASER pre mužov" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">Liposukcia VASER pre mužov</div></div></div>
-      <div class="proc-grid-card"><img src="{{ base }}../fotky/web/work-op-4.jpg" loading="lazy" alt="HD liposukcia (vyrysovanie brucha)" /><div class="proc-grid-card-body"><div class="proc-grid-card-title">HD liposukcia (vyrysovanie brucha)</div></div></div>
-    </div>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ base }}index.html">{{ nav_home }}</a><span>›</span><em>{{ nav_zakroky }}</em><span>›</span><em>{{ nav_zakroky_muz }}</em>
+    </nav>
 
-    <!-- Before / After (shown on click) -->
-    <div class="ba-section ba-locked">
+    <div class="cat-intro">
+      <div class="cat-intro-text">
+        <h2 class="section-title">{{ cat_muz_title }}</h2>
+        <p class="cat-lead">{{ cat_muz_text }}</p>
+        <p>{{ cat_approach }}</p>
+        <div class="cat-intro-actions">
+          <a href="{{ base }}kontakt/index.html" class="btn btn-primary js-book-consultation">{{ btn_consultation }}</a>
+        </div>
+      </div>
+      <div class="cat-intro-photo">
+        <img src="{{ base }}../fotky/web/spec-muz.jpg" alt="MUDr. Filip Čaniga" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--gray">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <h2 class="section-title">{{ cat_procs_title }}</h2>
+      <p class="section-subtitle">{{ cat_procs_subtitle }}</p>
+    </div>
+    <div class="proc-list">
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ cat_muz_p1_t }}</h3>
+        <p class="proc-item-text">{{ cat_muz_p1_d }}</p>
+      </div>
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ cat_muz_p2_t }}</h3>
+        <p class="proc-item-text">{{ cat_muz_p2_d }}</p>
+      </div>
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ cat_muz_p3_t }}</h3>
+        <p class="proc-item-text">{{ cat_muz_p3_d }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Before / After (shown on click) -->
+<section class="section">
+  <div class="container">
+    <div class="ba-locked">
       <h2 class="section-title">{{ ba_title }}</h2>
       <p class="ba-note">{{ ba_sensitive }} {{ ba_note }}</p>
       <div class="ba-locked-actions">
-        <button type="button" class="btn btn-outline-gold js-ba-open js-ba-open" data-title="{{ spec4_title }}" data-images="{{ base }}../fotky/web/ba-muz-1.jpg,{{ base }}../fotky/web/ba-muz-2.jpg">{{ ba_show }}</button>
+          <button type="button" class="btn btn-outline-gold js-ba-open" data-title="{{ ba_muz_title }}" data-images="{{ base }}../fotky/web/ba-muz-1.jpg,{{ base }}../fotky/web/ba-muz-2.jpg">{{ ba_show }}</button>
       </div>
     </div>
-
-    <div style="text-align:center; margin-top:50px;"><a href="../../kontakt/index.html" class="btn btn-primary js-book-consultation">Prajem si konzultáciu</a></div>
   </div>
 </section>
+
 <section class="cta-banner">
   <div class="container">
-    <h2 class="section-title">Máte otázky?</h2>
-    <p class="section-subtitle">Kontaktujte ma a rád Vám zodpoviem všetky otázky pri osobnej konzultácii.</p>
-    <a href="../../kontakt/index.html" class="btn btn-white js-book-consultation">Prajem si konzultáciu</a>
+    <h2 class="section-title">{{ cat_cta_title }}</h2>
+    <p class="section-subtitle">{{ cat_cta_text }}</p>
+    <a href="{{ base }}kontakt/index.html" class="btn btn-white js-book-consultation">{{ btn_consultation }}</a>
   </div>
 </section>
 

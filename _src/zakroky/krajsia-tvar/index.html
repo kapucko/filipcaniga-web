@@ -1,12 +1,12 @@
-{% include "_partials/head.html" title="Krajšia tvár — MUDr. Filip Čaniga" description="Zákroky pre krajšiu tvár — rinoplastika, blefaroplastika, lifting tváre a ďalšie estetické procedúry." %}
+{% include "_partials/head.html" title="{{ nav_zakroky_tvar }} — MUDr. Filip Čaniga" description="{{ cat_tvar_text }}" %}
 
 {% include "_partials/header.html" active_zakroky=" active" %}
 
-<section class="page-hero" style="background-image: url('{{ base }}../fotky/web/hero-tvar.jpg');">
+<section class="page-hero" style="--hero-img: url('{{ base }}../fotky/web/hero-tvar.jpg');">
   <div class="container">
     <div class="page-hero-content">
-      <h1 class="page-hero-title">{{ tvar_hero_title }}</h1>
-      <p class="page-hero-subtitle">Harmonické výsledky s individuálnym prístupom</p>
+      <h1 class="page-hero-title">{{ nav_zakroky_tvar }}</h1>
+      <p class="page-hero-subtitle">{{ cat_tvar_hero_sub }}</p>
     </div>
   </div>
 </section>
@@ -14,106 +14,57 @@
 <section class="section">
   <div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="../../index.html">Domov</a>
-      <span>›</span>
-      <span>Zákroky</span>
-      <span>›</span>
-      <span>Krajšia tvár</span>
+      <a href="{{ base }}index.html">{{ nav_home }}</a><span>›</span><em>{{ nav_zakroky }}</em><span>›</span><em>{{ nav_zakroky_tvar }}</em>
     </nav>
 
-    <div class="section-header">
-      <h2 class="section-title">Zákroky pre krajšiu tvár</h2>
-      <p class="section-subtitle">
-        Cieľom je prirodzený a harmonický výsledok, ktorý zvýrazní Vaše prednosti. Každý pacient je jedinečný a pristupujem ku každému individuálne.
-      </p>
+    <div class="cat-intro">
+      <div class="cat-intro-text">
+        <h2 class="section-title">{{ cat_tvar_title }}</h2>
+        <p class="cat-lead">{{ cat_tvar_text }}</p>
+        <p>{{ cat_approach }}</p>
+        <div class="cat-intro-actions">
+          <a href="{{ base }}kontakt/index.html" class="btn btn-primary js-book-consultation">{{ btn_consultation }}</a>
+        </div>
+      </div>
+      <div class="cat-intro-photo">
+        <img src="{{ base }}../fotky/web/spec-tvar.jpg" alt="MUDr. Filip Čaniga" />
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="grid-4" style="grid-template-columns: repeat(3, 1fr);">
-      <a href="#" class="proc-grid-card">
-        <img src="{{ base }}../fotky/web/work-op-5.jpg" loading="lazy" alt="Rinoplastika" />
-        <div class="proc-grid-card-body">
-          <div class="proc-grid-card-title">Rinoplastika (nos)</div>
-        </div>
-      </a>
-      <a href="#" class="proc-grid-card">
-        <img src="{{ base }}../fotky/web/work-op-1.jpg" loading="lazy" alt="Blefaroplastika" />
-        <div class="proc-grid-card-body">
-          <div class="proc-grid-card-title">Blefaroplastika (viečka)</div>
-        </div>
-      </a>
-      <a href="#" class="proc-grid-card">
-        <img src="{{ base }}../fotky/web/work-op-2.jpg" loading="lazy" alt="Lifting tváre" />
-        <div class="proc-grid-card-body">
-          <div class="proc-grid-card-title">Lifting tváre</div>
-        </div>
-      </a>
-      <a href="#" class="proc-grid-card">
-        <img src="{{ base }}../fotky/web/work-op-3.jpg" loading="lazy" alt="Korekcia uší" />
-        <div class="proc-grid-card-body">
-          <div class="proc-grid-card-title">Korekcia uší (otoplastika)</div>
-        </div>
-      </a>
-      <a href="#" class="proc-grid-card">
-        <img src="{{ base }}../fotky/web/work-consult-1.jpg" loading="lazy" alt="Modelovanie pier" />
-        <div class="proc-grid-card-body">
-          <div class="proc-grid-card-title">Modelovanie pier</div>
-        </div>
-      </a>
-      <a href="#" class="proc-grid-card">
-        <img src="{{ base }}../fotky/web/work-op-4.jpg" loading="lazy" alt="Korekcia brady" />
-        <div class="proc-grid-card-body">
-          <div class="proc-grid-card-title">Korekcia brady</div>
-        </div>
-      </a>
-      <a href="#" class="proc-grid-card">
-        <img src="{{ base }}../fotky/web/work-vaser.jpg" loading="lazy" alt="Lifting krku" />
-        <div class="proc-grid-card-body">
-          <div class="proc-grid-card-title">Lifting krku a dekoltu</div>
-        </div>
-      </a>
-      <a href="#" class="proc-grid-card">
-        <img src="{{ base }}../fotky/web/work-coat.jpg" loading="lazy" alt="Skrášlenie obočia" />
-        <div class="proc-grid-card-body">
-          <div class="proc-grid-card-title">Lifting obočia</div>
-        </div>
-      </a>
-      <a href="#" class="proc-grid-card">
-        <img src="{{ base }}../fotky/web/work-consult-2.jpg" loading="lazy" alt="Škúlenie čeľuste" />
-        <div class="proc-grid-card-body">
-          <div class="proc-grid-card-title">Škúlenie čeľuste (bruxizmus)</div>
-        </div>
-      </a>
-      <a href="#" class="proc-grid-card">
-        <img src="{{ base }}../fotky/web/work-scrubs.jpg" loading="lazy" alt="Vrásky" />
-        <div class="proc-grid-card-body">
-          <div class="proc-grid-card-title">Odstránenie vrások</div>
-        </div>
-      </a>
-      <a href="#" class="proc-grid-card">
-        <img src="{{ base }}../fotky/web/work-office.jpg" loading="lazy" alt="Kožné defekty" />
-        <div class="proc-grid-card-body">
-          <div class="proc-grid-card-title">Kožné defekty</div>
-        </div>
-      </a>
-      <a href="#" class="proc-grid-card">
-        <img src="{{ base }}../fotky/web/work-studio.jpg" loading="lazy" alt="Omladzenie tváre" />
-        <div class="proc-grid-card-body">
-          <div class="proc-grid-card-title">Omladzenie tváre</div>
-        </div>
-      </a>
+<section class="section section--gray">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <h2 class="section-title">{{ cat_procs_title }}</h2>
+      <p class="section-subtitle">{{ cat_procs_subtitle }}</p>
     </div>
-
-    <div style="text-align:center; margin-top:50px;">
-      <a href="../../kontakt/index.html" class="btn btn-primary js-book-consultation">Prajem si konzultáciu</a>
+    <div class="proc-list proc-list--two">
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ cat_tvar_p1_t }}</h3>
+        <p class="proc-item-text">{{ cat_tvar_p1_d }}</p>
+      </div>
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ cat_tvar_p2_t }}</h3>
+        <p class="proc-item-text">{{ cat_tvar_p2_d }}</p>
+      </div>
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ cat_tvar_p3_t }}</h3>
+        <p class="proc-item-text">{{ cat_tvar_p3_d }}</p>
+      </div>
+      <div class="proc-item fade-up">
+        <h3 class="proc-item-title">{{ cat_tvar_p4_t }}</h3>
+        <p class="proc-item-text">{{ cat_tvar_p4_d }}</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="cta-banner">
   <div class="container">
-    <h2 class="section-title">Máte otázky?</h2>
-    <p class="section-subtitle">Kontaktujte ma a rád Vám zodpoviem všetky otázky pri osobnej konzultácii.</p>
-    <a href="../../kontakt/index.html" class="btn btn-white js-book-consultation">Prajem si konzultáciu</a>
+    <h2 class="section-title">{{ cat_cta_title }}</h2>
+    <p class="section-subtitle">{{ cat_cta_text }}</p>
+    <a href="{{ base }}kontakt/index.html" class="btn btn-white js-book-consultation">{{ btn_consultation }}</a>
   </div>
 </section>
 

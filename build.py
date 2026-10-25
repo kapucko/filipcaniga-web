@@ -56,7 +56,8 @@ def render(text: str, vars: dict) -> str:
     """Recursively expand {% include %} directives, then substitute {{ vars }}."""
 
     def replace_include(m):
-        partial_path = SRC / m.group(1)
+        # include paths may contain variables, e.g. "_content/{{ lang }}/faq.html"
+        partial_path = SRC / VAR_RE.sub(lambda v: str(vars.get(v.group(1), '')), m.group(1))
         sub_vars = dict(vars)
         for am in ATTR_RE.finditer(m.group(2)):
             sub_vars[am.group(1)] = am.group(2)
@@ -149,7 +150,8 @@ def build_all() -> int:
     for lang in LANGUAGES:
         translations = load_translations(lang)
         for src_file in sorted(SRC.rglob('*.html')):
-            if '_partials' in src_file.parts:
+            # folders starting with "_" (_partials, _content, _i18n) hold fragments, not pages
+            if any(part.startswith('_') for part in src_file.relative_to(SRC).parts):
                 continue
             if src_file.relative_to(SRC).as_posix() in SKIP_PAGES:
                 continue

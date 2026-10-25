@@ -1,52 +1,5 @@
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-logo-wrap">
-          <a href="{{ base }}index.html" class="footer-logo">
-            <div class="logo-mark">FC</div>
-            <div class="logo-text">
-              <span class="logo-name">{{ doctor_full_name }}</span>
-              <span class="logo-title">{{ doctor_title }}</span>
-            </div>
-          </a>
-        </div>
-        <p class="footer-desc">{{ footer_desc }}</p>
-      </div>
-
-      <div>
-        <h4 class="footer-col-title">{{ footer_col_zakroky }}</h4>
-        <ul class="footer-links">
-          <li><a href="{{ base }}zakroky/krajsia-tvar/index.html">{{ nav_zakroky_tvar }}</a></li>
-          <li><a href="{{ base }}zakroky/krajsie-prsia/index.html">{{ nav_zakroky_prsia }}</a></li>
-          <li><a href="{{ base }}zakroky/krajsie-telo/index.html">{{ nav_zakroky_telo }}</a></li>
-          <li><a href="{{ base }}zakroky/atraktivnejsi-muz/index.html">{{ nav_zakroky_muz }}</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="footer-col-title">{{ footer_col_navigation }}</h4>
-        <ul class="footer-links">
-          <li><a href="{{ base }}o-mne/index.html">{{ nav_omne }}</a></li>
-          <li><a href="{{ base }}faq/index.html">{{ nav_faq }}</a></li>
-          <li><a href="{{ base }}kontakt/index.html">{{ nav_kontakt }}</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="footer-col-title">{{ footer_col_kontakt }}</h4>
-        <div class="footer-contact-item footer-contact-item--multiline">
-          <span class="footer-contact-icon" aria-hidden="true">{{ clinic_bratislava_flag }}</span>
-          <span><strong>{{ clinic_bratislava_name }}</strong> — {{ clinic_bratislava_city }}<br><a href="{{ clinic_bratislava_phone_link }}">{{ clinic_bratislava_phone }}</a></span>
-        </div>
-        <div class="footer-contact-item footer-contact-item--multiline">
-          <span class="footer-contact-icon" aria-hidden="true">{{ clinic_prague_flag }}</span>
-          <span><strong>{{ clinic_prague_name }}</strong> — {{ clinic_prague_city }}<br><a href="{{ clinic_prague_phone_link }}">{{ clinic_prague_phone }}</a></span>
-        </div>
-        <div class="footer-contact-item"><a href="{{ instagram_url }}" target="_blank" rel="noopener">{% include "_partials/ig-icon.html" %} @dr.filipcaniga</a></div>
-      </div>
-    </div>
-
     <div class="footer-bottom">
       <p class="footer-copyright">{{ footer_copyright }}</p>
       <div class="footer-legal">
