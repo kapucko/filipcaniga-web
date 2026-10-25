@@ -4,6 +4,16 @@
 
 function fcInit() {
 
+  /* ── Mobile menu: collapsible specializations ────────────── */
+  document.querySelectorAll('.mobile-nav-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var list = btn.nextElementSibling;
+      var open = btn.getAttribute('aria-expanded') !== 'true';
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (list) list.classList.toggle('open', open);
+    });
+  });
+
   /* ── Language dropdown ───────────────────────────────────── */
   document.querySelectorAll('.lang-switcher').forEach(function (sw) {
     var btn = sw.querySelector('.lang-current');

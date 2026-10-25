@@ -41,7 +41,7 @@
 <nav class="mobile-nav" aria-label="{{ nav_home }}">
   <a href="{{ base }}index.html" class="mobile-nav-link">{{ nav_home }}</a>
   <a href="{{ base }}o-mne/index.html" class="mobile-nav-link">{{ nav_omne }}</a>
-  <a href="#" class="mobile-nav-link">{{ nav_zakroky }} ▾</a>
+  <button type="button" class="mobile-nav-link mobile-nav-toggle" aria-expanded="false">{{ nav_zakroky }} <span class="mobile-caret" aria-hidden="true">▾</span></button>
   <div class="mobile-dropdown">
     <a href="{{ base }}zakroky/zvacsenie-prs/index.html" class="mobile-dropdown-link">{{ sp_zp_nav }}</a>
     <a href="{{ base }}zakroky/modelacia-prs/index.html" class="mobile-dropdown-link">{{ sp_mp_nav }}</a>

@@ -273,7 +273,11 @@ ul { list-style: none; }
   transition: color var(--transition);
 }
 .mobile-nav-link:hover { color: var(--gold); }
-.mobile-dropdown { padding-left: 16px; }
+.mobile-dropdown { padding-left: 16px; display: none; }
+.mobile-dropdown.open { display: block; }
+.mobile-nav-toggle { width: 100%; text-align: left; background: none; border: none; border-bottom: 1px solid var(--bg-warm); font-family: inherit; cursor: pointer; }
+.mobile-caret { display: inline-block; font-size: 0.8em; transition: transform 0.2s ease; }
+.mobile-nav-toggle[aria-expanded="true"] .mobile-caret { transform: rotate(180deg); }
 .mobile-dropdown-link {
   display: block; padding: 10px 0;
   font-size: 0.9rem; color: var(--muted); text-decoration: none;

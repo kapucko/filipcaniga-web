@@ -10,7 +10,7 @@ T = {
     # ===== Navigation =====
     'nav_home': 'Startseite',
     'nav_omne': 'Über mich',
-    'nav_zakroky': 'Eingriffe',
+    'nav_zakroky': 'Spezialisierungen',
     'nav_mediach': 'In den Medien',
     'nav_faq': 'FAQ',
     'nav_kontakt': 'Kontakt',
@@ -81,10 +81,10 @@ T = {
     'contact_value_parking': 'Rund um die Klinik und Parkhaus Bottova',
     'contact_email_link': 'eveclinic Kontaktformular',
 
-    'instagram_url': 'https://www.instagram.com/dr.filipcaniga/',
+    'instagram_url': 'https://www.instagram.com/dr.filip.caniga/',
     'ig_title': 'Hinter den Kulissen meiner Praxis',
     'ig_text': 'Auf Instagram teile ich Neuigkeiten aus meiner Praxis und Antworten auf die Fragen, die mir Patienten am häufigsten stellen.',
-    'ig_btn': '@dr.filipcaniga folgen',
+    'ig_btn': '@dr.filip.caniga folgen',
 
     # ===== Über mich =====
     'omne_meta_title': 'Über mich — Dr. Filip Čaniga',
